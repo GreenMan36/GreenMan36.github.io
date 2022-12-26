@@ -1,0 +1,18 @@
+/*
+This file implements highcontrast because some people have trouble seeing otherwise.
+Quite harsh on the eyes, but it's better than not being able to see.
+*/
+
+:root {
+  --greenlight: hsl(120, 100%, 50%);
+  --background-color: rgb(128, 128, 128);
+  --card-color: #000000;
+  --header-color: #ffffff;
+  --text-color: #ffffff;
+  color-scheme: dark;
+}
+
+select {
+  appearance: none;
+  background-color: red !important;
+}

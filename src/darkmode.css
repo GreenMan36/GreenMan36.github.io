@@ -1,0 +1,13 @@
+/*
+This file implements darkmode because lightmode burns by eyes harder than the surface of the sun from 10 feet away.
+Nice and dark with lighter text.
+*/
+
+:root {
+  --greenlight: hsl(120, 100%, 50%);
+  --background-color: #151515;
+  --card-color: #1a1a1a;
+  --header-color: #ffffff;
+  --text-color: hsl(0, 0%, 80%);
+  color-scheme: dark;
+}

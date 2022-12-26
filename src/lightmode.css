@@ -1,0 +1,13 @@
+/*
+This file implements light because some people like to burn their eyes harder than the surface of the sun from 10 feet away.
+Terribly light with dark text.
+*/
+
+:root {
+  --greenlight: hsl(120, 80%, 40%);
+  --background-color: #ffffff;
+  --card-color: #f0f0f0;
+  --header-color: #000000;
+  --text-color: hsl(0, 0%, 20%);
+  color-scheme: light;
+}

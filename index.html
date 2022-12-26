@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenDown Example</title>
+
+  
+  <link rel="stylesheet" href="src/lightmode.css">
+  <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="src/darkmode.css">
+  <!-- high contrast prefered-->
+  <link rel="stylesheet" media="(prefers-constrast: more)" href="src/highcontrast.css">
+  <link rel="stylesheet" href="src/index.css">
+  <script type="module" src="src/index.js"></script>
+
+</head>
+<body>
+  <div id="themeswitcher">
+    <label for="theme-dropdown" id="theme-label">Theme: </label>
+    <select name="theme" id="theme-dropdown">
+      <option value="default">System</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+      <option value="snow">Snow</option>
+      <option value="highcontrast">High Contrast</option>
+    </select>
+  </div>
+  <div id="md-output" class="hidden">
+  </div>
+  <div id="md-input" class="hidden">
+      <textarea id="input" placeholder="Input"># Sneakpeek of the GreenDown Editor
+Sneakybeaky, you found the live GreenDown editor!
+This is not finished but feel free to play around with it.
+
+I plan to be doing some cool stuff with this site and GreenDown in the future.
+      </textarea>
+  </div>                                                                                 
+</body>
+</html>

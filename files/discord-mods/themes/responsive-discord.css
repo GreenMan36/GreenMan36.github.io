@@ -2,7 +2,7 @@
  * @name Greens Responsive Discord
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 27.12.22a
+ * @version 31.01.23a
  * @description A theme that tries to make Discord's sidebars adapt when resizing your window.
 */
 
@@ -19,7 +19,7 @@
 /* used for theme name and version, DO NOT TOUCH */
 :root {
     --theme-name: "Greens Responsive Discord";
-    --version: "26.12.22a";
+    --version: "31.01.23a";
 }
 
 /* these can be customized. just copy/paste the whole thing into your custom CSS and mess around with it. */
@@ -395,4 +395,9 @@ border-radius: 8px;
   background: linear-gradient(0deg, 
                     var(--background-secondary) 25%, 
                     transparent) 100%;
+}
+
+/* patch the images in the user call area */
+button.button-1EGGcP {
+    padding: 0;
 }

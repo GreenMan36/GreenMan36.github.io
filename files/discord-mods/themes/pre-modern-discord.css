@@ -2,7 +2,7 @@
  * @name Greens Premodern Discord
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 29.12.22a
+ * @version 31.01.23a
  * @description A theme that just steals the colors from Alexis Modern Discord
 */
 
@@ -13,7 +13,7 @@
 /* used for theme name and version, DO NOT TOUCH */
 :root {
     --theme-name: "Greens Premodern Discord";
-    --version: "29.12.22a";
+    --version: "31.01.23a";
 }
 
 /* these can be customized. just copy/paste the whole thing into your custom CSS and mess around with it. */
@@ -404,3 +404,22 @@ span.expandedFolderBackground-1kSAf6 {
     background: var(--background-tertiary) !important;
 }
 
+/* make the notice bar floating */
+.notice-2HEN-u {
+    padding: 4px 24px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.notice-2HEN-u * {
+    position: relative;
+}
+
+/* viewing as role notice, back button */
+.notice-2HEN-u .button-29sJG8.backButton-3I5R-E {
+    margin: 0 16px 0 0;
+}
+
+.notice-2HEN-u {
+    transform: translateX(calc(50vw - 50%)) translateY(64px);
+}

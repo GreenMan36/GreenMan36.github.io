@@ -396,3 +396,11 @@ span.expandedFolderBackground-1kSAf6 {
 .wrapper-1VLyxH.avatar-3mTjvZ {
     border-color: var(--background-secondary);
 }
+
+/* patch the background of the user area */
+.theme-dark .container-YkUktl,
+.theme-light .container-YkUktl,
+.container-1zzFcN {
+    background: var(--background-tertiary) !important;
+}
+

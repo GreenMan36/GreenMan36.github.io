@@ -2,7 +2,7 @@
  * @name Greens Premodern Discord
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 31.01.23a
+ * @version 05.02.23a
  * @description A theme that just steals the colors from Alexis Modern Discord
 */
 
@@ -13,7 +13,7 @@
 /* used for theme name and version, DO NOT TOUCH */
 :root {
     --theme-name: "Greens Premodern Discord";
-    --version: "31.01.23a";
+    --version: "05.02.23a";
 }
 
 /* these can be customized. just copy/paste the whole thing into your custom CSS and mess around with it. */
@@ -21,6 +21,8 @@
     --radius: 18px;
 	--border-radius: clamp(4px, var(--radius), 40px)
 }
+
+@import url("https://greenman36.github.io/files/discord-mods/themes/snippets/better-image-embeds.css");
 
 /* styling for the theme name and version */
 .info-3pQQBb::after {

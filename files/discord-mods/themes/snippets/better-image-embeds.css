@@ -1,0 +1,70 @@
+/**
+ * @name Better Image Embeds
+ * @author GreenMan36#0633
+ * @authorLink https://github.com/GreenMan36
+ * @version 05.02.23a
+ * @description A small snippet that makes image embeds look better and not zoomed/blurred.
+*/
+
+/*
+(C) GreenMan36#0633
+*/
+
+/* snippets don't show their version in the settings */
+
+:root {
+  --new-image-border-radius: 8px;
+  --new-image-border-width: calc( 0px + var(--new-image-border-radius) / 2);
+  --new-image-max-height: calc(350px - var(--new-image-border-width) * 2); /* should be below 350 */
+}
+
+/* style all individual image containers */
+:is(.oneByOneGridMosaic-2fYTx0, .twoByTwoGrid-35pISX, .oneByTwoGrid-25mx0i, .threeByThreeGrid-2CT4mS) .lazyImg-ewiNCh,
+:is(.oneByOneGridMosaic-2fYTx0, .twoByTwoGrid-35pISX, .oneByTwoGrid-25mx0i, .threeByThreeGrid-2CT4mS) .lazyImgContainer-3k3gRy {
+  aspect-ratio: unset;
+  border-radius: 8px;
+  /* without this, small images are impossible to remove */
+  min-width: 40px;
+  min-height: 40px;
+  box-sizing: border-box;
+  /* height: fit-content !important; */
+  /* width: fit-content !important; */
+  max-width: 100%;
+  max-height: var(--new-image-max-height) !important;
+  border-radius: var(--new-image-border-radius);
+}
+
+/* bonus styling, adds cards to all images */
+.imageContainer-10XenG {
+  background: var(--background-secondary);
+  padding: var(--new-image-border-width);
+  box-sizing: border-box;
+  border-radius: var(--new-image-border-radius);
+  /* quick lil fix for people who like to send 1x1/small images */
+  min-width: 32px;
+  min-height: 32px;
+  /* width: fit-content; */
+}
+
+/* grids don't resize properly so unset lets them take their space */
+:is(.oneByOneGridMosaic-2fYTx0, .twoByTwoGrid-35pISX, .oneByTwoGrid-25mx0i, .threeByThreeGrid-2CT4mS) {
+  max-height: unset;
+}
+
+/* makes big image smaller, small image stay the same */
+img.lazyImg-ewiNCh {
+  object-fit: scale-down !important;
+  width: unset !important;
+  border-radius: var(--new-image-border-radius);
+}
+
+/* single image fix height */
+.clickableWrapper-2WTAkL img.lazyImg-ewiNCh {
+  max-height: var(--new-image-max-height);
+}
+
+/* single image center */
+.clickableWrapper-2WTAkL {
+  display: grid;
+  justify-content: center;
+}

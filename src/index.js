@@ -55,6 +55,18 @@ themeDropdown.addEventListener("change", (e) => {
       document.documentElement.classList.add("snowmode");
       localStorage.setItem("theme", "snow");
       break;
+    case "summer":
+      document.documentElement.classList.add("summermode");
+      localStorage.setItem("theme", "summer");
+      break;
+    case "summerdark":
+      document.documentElement.classList.add("summerdarkmode");
+      localStorage.setItem("theme", "summerdark");
+      break;
+    case "autumn":
+      document.documentElement.classList.add("autumnmode");
+      localStorage.setItem("theme", "autumn");
+      break;
     case "highcontrast":
       document.documentElement.classList.add("highcontrast");
       localStorage.setItem("theme", "highcontrast");
@@ -78,6 +90,18 @@ switch (localStorage.getItem("theme")) {
   case "snow":
     document.documentElement.classList.add("snowmode");
     themeDropdown.value = "snow";
+    break;
+  case "summer":
+    document.documentElement.classList.add("summermode");
+    themeDropdown.value = "summer";
+    break;
+  case "summerdark":
+    document.documentElement.classList.add("summerdarkmode");
+    themeDropdown.value = "summerdark";
+    break;
+  case "autumn":
+    document.documentElement.classList.add("autumnmode");
+    themeDropdown.value = "autumn";
     break;
   case "highcontrast":
     document.documentElement.classList.add("highcontrast");

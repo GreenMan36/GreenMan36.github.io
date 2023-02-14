@@ -2,7 +2,7 @@
  * @name Better Image Embeds
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 05.02.23b
+ * @version 14.02.23b
  * @description A small snippet that makes image embeds look better and not zoomed/blurred.
 */
 
@@ -69,6 +69,20 @@ img.lazyImg-ewiNCh {
 
 /* single image center */
 .clickableWrapper-2WTAkL {
-  display: grid;
+  display: block;
+  /* chrome says this does nothing, but thats cap */
   justify-content: center;
+}
+
+/* for forum grid and stuff */
+img.imageCover-1xE-uL {
+  aspect-ratio: unset !important;
+}
+
+/* for forum list and stuff */
+.clickableWrapper-2WTAkL img {
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: unset !important;
+  object-fit: scale-down !important;
 }

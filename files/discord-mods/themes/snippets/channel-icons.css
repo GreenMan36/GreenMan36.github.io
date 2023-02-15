@@ -2,7 +2,7 @@
  * @name Channel Icons
  * @author Alexis | WyvernZu#0001
  * @authorLink https://github.com/AlexisJonsson
- * @version 12.02.23a
+ * @version 15.02.23a
  * @description Adds icons to channels. Made into a snippet and updated by GreenMan36#0633
 */
 
@@ -257,20 +257,22 @@
   width: 100%
 }
 
+.container-1NXEtd a[aria-label*=discord] .iconContainer-21RCa3 {
+  --icon: var(--icon-discord);
+  background-color: var(--icon-color)
+}
+
 .container-1NXEtd a[aria-label*=voice] .iconContainer-21RCa3 {
   --icon: var(--icon-microphone);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=ama] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=qna] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=ama], [aria-label*=qna]) .iconContainer-21RCa3 {
   --icon: var(--icon-qna);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=group] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=multiplayer] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=social] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=group], [aria-label*=multiplayer], [aria-label*=social]) .iconContainer-21RCa3 {
   --icon: var(--icon-group);
   background-color: var(--icon-color)
 }
@@ -280,23 +282,32 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=about] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=info] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=instruction] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=gift], [aria-label*=giveaway], [aria-label*=birthday], [aria-label*=party]) .iconContainer-21RCa3 {
+  --icon: var(--icon-gift);
+  background-color: var(--icon-color)
+}
+
+.container-1NXEtd a:is([aria-label*=model], [aria-label*="3d"], [aria-label*="4d"], [aria-label*=polygon]) .iconContainer-21RCa3 {
+  --icon: var(--icon-model);
+  background-color: var(--icon-color)
+}
+
+.container-1NXEtd a:is([aria-label*=misc], [aria-label*=random], [aria-label*=other]) .iconContainer-21RCa3 {
+  --icon: var(--icon-random);
+  background-color: var(--icon-color)
+}
+
+.container-1NXEtd a:is([aria-label*=about], [aria-label*=info], [aria-label*=instruction]) .iconContainer-21RCa3 {
   --icon: var(--icon-info);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=faq] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=help] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=question] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*="how-to"] .iconContainer-21RCa3  {
+.container-1NXEtd a:is([aria-label*=faq], [aria-label*=help], [aria-label*=question], [aria-label*="how-to"]) .iconContainer-21RCa3 {
   --icon: var(--icon-help);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=programmer] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=programming] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=programmer], [aria-label*=programming]) .iconContainer-21RCa3 {
   --icon: var(--icon-api);
   background-color: var(--icon-color)
 }
@@ -306,56 +317,42 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=background] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=gallery] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=image] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=pic] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=picture] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=screenshot] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=wallpaper] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=background], [aria-label*=gallery], [aria-label*=image], [aria-label*=pic], [aria-label*=picture], [aria-label*=screenshot], [aria-label*=wallpaper]) .iconContainer-21RCa3 {
   --icon: var(--icon-image);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=job] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=work] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=job], [aria-label*=work]) .iconContainer-21RCa3 {
   --icon: var(--icon-job);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=art] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=theme] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=art], [aria-label*=theme], [aria-label*=paint], [aria-label*=draw]) .iconContainer-21RCa3 {
   --icon: var(--icon-theme);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=earth] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=globe] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=international] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=planet] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=site] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=earth], [aria-label*=globe], [aria-label*=international], [aria-label*=planet], [aria-label*=site]) .iconContainer-21RCa3 {
   --icon: var(--icon-language);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=addon] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=extension] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=plugin] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=addon], [aria-label*=extension], [aria-label*=plugin]) .iconContainer-21RCa3 {
   --icon: var(--icon-plugin);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=code] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=codi] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=css] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=script] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=code], [aria-label*=codi], [aria-label*=css], [aria-label*=script]) .iconContainer-21RCa3 {
   background-color: var(--icon-color);
   --icon: var(--icon-code)
 }
 
-.container-1NXEtd a[aria-label*=animal] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=pets] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=aminal] .iconContainer-21RCa3{
+.container-1NXEtd a:is([aria-label*=formula-], [aria-label*=motor-sport], [aria-label*=motorsport]) .iconContainer-21RCa3 {
+  --icon: var(--icon-motorsport);
+  background-color: var(--icon-color)
+}
+
+.container-1NXEtd a:is([aria-label*=animal], [aria-label*=pets], [aria-label*=aminal]) .iconContainer-21RCa3 {
   --icon: var(--icon-pets);
   background-color: var(--icon-color)
 }
@@ -365,50 +362,37 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=edit] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=name] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=nickname] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=write] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=edit], [aria-label*=name], [aria-label*=nickname], [aria-label*=write]) .iconContainer-21RCa3 {
   background-color: var(--icon-color);
   --icon: var(--icon-edit)
 }
 
-.container-1NXEtd a[aria-label*=donator] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=sponsor] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=star] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=supporter] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=donator], [aria-label*=sponsor], [aria-label*=star], [aria-label*=supporter]) .iconContainer-21RCa3 {
   background-color: var(--icon-color);
   --icon: var(--icon-stars)
 }
 
-.container-1NXEtd a[aria-label*=helper] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=helpful] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=helper], [aria-label*=helpful]) .iconContainer-21RCa3 {
   background-color: var(--icon-color);
   --icon: var(--icon-heart)
 }
 
-.container-1NXEtd a[aria-label*=mod] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=moderator] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=staff] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=mod], [aria-label*=moderator], [aria-label*=staff]) .iconContainer-21RCa3 {
   background-color: var(--icon-color);
   --icon: var(--icon-mod)
 }
 
-.container-1NXEtd a[aria-label*=brain] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=developer] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=brain], [aria-label*=developer]) .iconContainer-21RCa3 {
   background-color: var(--icon-color);
   --icon: var(--icon-dev)
 }
 
-.container-1NXEtd a[aria-label*=market] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=shop] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=store] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=market], [aria-label*=shop], [aria-label*=store]) .iconContainer-21RCa3 {
   background-color: var(--icon-color);
   --icon: var(--icon-store)
 }
 
-.container-1NXEtd a[aria-label*=spoiler] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=warning] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=spoiler], [aria-label*=warning]) .iconContainer-21RCa3 {
   background-color: var(--icon-color);
   --icon: var(--icon-problem)
 }
@@ -423,9 +407,7 @@
   --icon: var(--icon-architecture)
 }
 
-.container-1NXEtd a[aria-label*=library] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=log] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=web] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=library], [aria-label*=log], [aria-label*=web]) .iconContainer-21RCa3 {
   background-color: var(--icon-color);
   --icon: var(--icon-list2)
 }
@@ -445,27 +427,22 @@
   --icon: var(--icon-drink)
 }
 
-.container-1NXEtd a[aria-label*=list] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=note] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=writing] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=list], [aria-label*=note], [aria-label*=writing]) .iconContainer-21RCa3 {
   background-color: var(--icon-color);
   --icon: var(--icon-list)
 }
 
-.container-1NXEtd a[aria-label*="-repo"] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=github-log] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=github] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=repositor] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=news], [aria-label*=update]) .iconContainer-21RCa3 {
+  --icon: var(--icon-news);
+  background-color: var(--icon-color)
+}
+
+.container-1NXEtd a:is([aria-label*="-repo"], [aria-label*=github-log], [aria-label*=git-log], [aria-label*=github], [aria-label*=repositor]) .iconContainer-21RCa3 {
   --icon: var(--icon-github);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=game] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=games] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=gamin] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=gaming] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=gayming] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=playtesting] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=game], [aria-label*=games], [aria-label*=gamin], [aria-label*=gaming], [aria-label*=gayming], [aria-label*=playtesting]) .iconContainer-21RCa3 {
   --icon: var(--icon-games);
   background-color: var(--icon-color)
 }
@@ -475,17 +452,12 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=modd] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=tech] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=tool] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=modd], [aria-label*=tech], [aria-label*=tool]) .iconContainer-21RCa3 {
   --icon: var(--icon-tool);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=conspiraci] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=conspiracy] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=illuminati] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=the-truth] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=conspiraci], [aria-label*=conspiracy], [aria-label*=illuminati], [aria-label*=the-truth]) .iconContainer-21RCa3 {
   --icon: var(--icon-truth);
   background-color: var(--icon-color)
 }
@@ -500,8 +472,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=asset] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=sandbox] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=asset], [aria-label*=sandbox]) .iconContainer-21RCa3 {
   --icon: var(--icon-asset);
   background-color: var(--icon-color)
 }
@@ -511,8 +482,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=alert] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=read-this] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=alert], [aria-label*=read-this], [aria-label*=read-me]) .iconContainer-21RCa3 {
   --icon: var(--icon-alert);
   background-color: var(--icon-color)
 }
@@ -532,60 +502,39 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=blueprint] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=node] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=pipeline] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=blueprint], [aria-label*=node], [aria-label*=pipeline]) .iconContainer-21RCa3 {
   --icon: var(--icon-pipeline);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=new-member] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=partner] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=supporter] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=welcome] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=new-member], [aria-label*=partner], [aria-label*=supporter], [aria-label*=welcome], [aria-label*=arrivals]) .iconContainer-21RCa3 {
   --icon: var(--icon-welcome);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=environment] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=terrain] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=environment], [aria-label*=terrain], [aria-label*=world-design]) .iconContainer-21RCa3 {
   --icon: var(--icon-environment);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=audio] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=sfx] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=sound] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=audio], [aria-label*=sfx], [aria-label*=sound]) .iconContainer-21RCa3 {
   --icon: var(--icon-sfx);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=deaf] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=mute] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=deaf], [aria-label*=mute]) .iconContainer-21RCa3 {
   --icon:
   var(--icon-muted);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=concept] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=concept], [aria-label*=draft], [aria-label*=outline], [aria-label*=sketch]) .iconContainer-21RCa3 {
   --icon: var(--icon-concept);
   background-color: var(--icon-color)
 }
 
 .container-1NXEtd a[aria-label*=decal] .iconContainer-21RCa3 {
   --icon: var(--icon-decal);
-  background-color: var(--icon-color)
-}
-
-.container-1NXEtd a[aria-label*=icon] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=ui] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=ux] .iconContainer-21RCa3 {
-  --icon: var(--icon-ui-ux);
-  background-color: var(--icon-color)
-}
-
-.container-1NXEtd a[aria-label*=model] .iconContainer-21RCa3 {
-  --icon: var(--icon-model);
   background-color: var(--icon-color)
 }
 
@@ -604,16 +553,12 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=folder] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=resource] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=folder], [aria-label*=resource]) .iconContainer-21RCa3 {
   --icon: var(--icon-folder);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=introduction] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=portfolio] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=showcase] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=showoff] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=introduction], [aria-label*=portfolio], [aria-label*=showcase], [aria-label*=showoff]) .iconContainer-21RCa3 {
   --icon: var(--icon-portfolio);
   background-color: var(--icon-color)
 }
@@ -623,7 +568,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=bug] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=bug], [aria-label*=issue], [aria-label*=error]) .iconContainer-21RCa3 {
   --icon: var(--icon-bug);
   background-color: var(--icon-color)
 }
@@ -633,8 +578,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=map] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=worldbuilding] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=map], [aria-label*=worldbuilding], [aria-label*=world-building]) .iconContainer-21RCa3 {
   --icon: var(--icon-map);
   background-color: var(--icon-color)
 }
@@ -649,8 +593,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=pbr] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=textur] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=pbr], [aria-label*=textur], [aria-label*=construction]) .iconContainer-21RCa3 {
   --icon: var(--icon-texture);
   background-color: var(--icon-color)
 }
@@ -665,16 +608,12 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=clip] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=replay] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=video] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=clip], [aria-label*=replay], [aria-label*=video], [aria-label*=recording]) .iconContainer-21RCa3 {
   --icon: var(--icon-video);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=film] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=movie] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=theater] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=film], [aria-label*=movie], [aria-label*=theater], [aria-label*=watch], [aria-label*=view] , [aria-label*=emby], [aria-label*=plex], [aria-label*=jellyfin], [aria-label*=stremio]) .iconContainer-21RCa3 {
   --icon: var(--icon-movie);
   background-color: var(--icon-color)
 }
@@ -684,8 +623,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=photo] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=photography] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=photo], [aria-label*=photography], [aria-label*=camera]) .iconContainer-21RCa3 {
   --icon: var(--icon-photo);
   background-color: var(--icon-color)
 }
@@ -695,29 +633,25 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=broadcast] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=livestream] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=stream] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=broadcast], [aria-label*=livestream], [aria-label*=stream]) .iconContainer-21RCa3 {
   --icon: var(--icon-livestream);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=guest] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=role] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=user] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=guest], [aria-label*=role], [aria-label*=user]) .iconContainer-21RCa3 {
   --icon: var(--icon-guest);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=user-experience] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=user-interface] .iconContainer-21RCa3 {
-  --icon: var(--icon-ui-ux);
+.container-1NXEtd a:is([aria-label*=icon], [aria-label^=ui], [aria-label*=ux], [aria-label*=user-experience]) .iconContainer-21RCa3
+/* .container-1NXEtd a[aria-label*=user-interface] .iconContainer-21RCa3 */
+/* TODO: FIX USER-INTERFACE */
+{
+  --icon: var(--icon-ui);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=common-sense] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=eula] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=rule] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=common-sense], [aria-label*=eula], [aria-label*=rule]).iconContainer-21RCa3 {
   --icon: var(--icon-rules);
   background-color: var(--icon-color)
 }
@@ -727,9 +661,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=circle-jerk] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=circlejerk] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=loop] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=circle-jerk], [aria-label*=circlejerk], [aria-label*=loop]) .iconContainer-21RCa3 {
   --icon: var(--icon-loop);
   background-color: var(--icon-color)
 }
@@ -739,52 +671,37 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=computer] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=pc] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=computer], [aria-label*=pc], [aria-label*=desktop], [aria-label*=laptop]) .iconContainer-21RCa3 {
   --icon: var(--icon-computer);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=microsoft] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=windows] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=microsoft], [aria-label*=windows], [aria-label*=crappy-os]) .iconContainer-21RCa3 {
   --icon: var(--icon-windows);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=optimiz] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=politic] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=poll] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=vote] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=voting] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=optimiz], [aria-label*=politic], [aria-label*=poll], [aria-label*=vote], [aria-label*=voting], [aria-label*=statistics], [aria-label*=graph]) .iconContainer-21RCa3 {
   --icon: var(--icon-poll);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=deal] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=trade] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=trading] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=deal], [aria-label*=trade], [aria-label*=trading], [aria-label*=sale])  .iconContainer-21RCa3 {
   --icon: var(--icon-deal);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=copyright] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=ip-rights] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=ip_rights] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=copyright], [aria-label*=ip-rights]) .iconContainer-21RCa3 {
   --icon: var(--icon-copyright);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=discords] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=server] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=discords], [aria-label*=servers]) .iconContainer-21RCa3 {
   --icon: var(--icon-server);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=emoji] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=emote] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=meme] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=shit-posting] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=shitposting] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=emoji], [aria-label*=emote], [aria-label*=meme], [aria-label*=shitposting], [aria-label*=shit-posting], [aria-label*=lol], [aria-label*=lmao]) .iconContainer-21RCa3 {
   --icon: var(--icon-meme);
   background-color: var(--icon-color)
 }
@@ -794,22 +711,13 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=coof] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=corona] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=covid] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=gorona] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=virus], [aria-label*=corona], [aria-label*=coof], [aria-label*=gorona], [aria-label*=covid], [aria-label*=sick], [aria-label*=illness], [aria-label*=pandemic], [aria-label*=covid19], [aria-label*=covid-19], [aria-label*=coronavirus], [aria-label*=corona-virus], [aria-label*=sars]) .iconContainer-21RCa3 {
   --icon: var(--icon-covid19);
   background-color: var(--icon-color)
 }
 
 .container-1NXEtd a[aria-label*=twitch] .iconContainer-21RCa3 {
   --icon: var(--icon-twitch);
-  background-color: var(--icon-color)
-}
-
-.container-1NXEtd a[aria-label*=misc] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=random] .iconContainer-21RCa3 {
-  --icon: var(--icon-random);
   background-color: var(--icon-color)
 }
 
@@ -823,44 +731,32 @@
   --icon: var(--icon-media)
 }
 
-.container-1NXEtd a[aria-label*=idea] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=suggestion] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=suggestion], [aria-label*=idea]) .iconContainer-21RCa3 {
   --icon: var(--icon-idea);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=chat] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=discussion] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=general] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=message] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=off-topic] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=offtopic] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=chat], [aria-label*=discussion], [aria-label*=general], [aria-label*=message], [aria-label*=off-topic], [aria-label*=offtopic]) .iconContainer-21RCa3 {
   --icon: var(--icon-discussion);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=gun-] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=guns] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=pistol] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=weapon] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=gun], [aria-label*=weapon], [aria-label*=pistol], [aria-label*=rifle], [aria-label*=shotgun], [aria-label*=assault], [aria-label*=sniper]) .iconContainer-21RCa3 {
   --icon: var(--icon-weapon);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=military] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=military], [aria-label*=police], [aria-label*=militia], [aria-label*=army], [aria-label*=soldier], [aria-label*=war], [aria-label*=battle], [aria-label*=combat], [aria-label*=fight], [aria-label*=fighting]) .iconContainer-21RCa3 {
   --icon: var(--icon-military);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=aperture] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=camera] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=vent] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=aperture], [aria-label*=camera], [aria-label*=lens]) .iconContainer-21RCa3 {
   --icon: var(--icon-aperture);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=fire] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=rant] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=rage], [aria-label*=angry], [aria-label*=mad], [aria-label*=furious], [aria-label*=fire], [aria-label*=flame], [aria-label*=burn], [aria-label*=burning], [aria-label*=burnt], [aria-label*=burned], [aria-lael*=rant], [aria-label*=ranted], [aria-label*=rants], [aria-label*=lit], [aria-label*=fuming], [aria-label*=fume]) .iconContainer-21RCa3 {
   --icon: var(--icon-fire);
   background-color: var(--icon-color)
 }
@@ -870,14 +766,8 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=setting] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=setting], [aria-label*=cogs]) .iconContainer-21RCa3 {
   --icon: var(--icon-settings);
-  background-color: var(--icon-color)
-}
-
-.container-1NXEtd a[aria-label*=news] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=update] .iconContainer-21RCa3{
-  --icon: var(--icon-news);
   background-color: var(--icon-color)
 }
 
@@ -886,46 +776,27 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=lobby] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=lounge] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=lobby], [aria-label*=lounge]) .iconContainer-21RCa3 {
   --icon: var(--icon-lounge);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label^=vip] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label^=vip], [aria-label^=mvp]) .iconContainer-21RCa3 {
   --icon: var(--icon-vip);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=friends] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label^=co-op] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=friends], [aria-label^=co-op]) .iconContainer-21RCa3 {
   --icon: var(--icon-friends);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=no-mic] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=sooks-quarantine-cabin] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=text-chat] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=textchat] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=vc-text] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=vctext] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=voice-but-with-text] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=voice-chat] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=voice-room] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=voice-text] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=voiceroom] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label^=text] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=no-mic], [aria-label*=text-chat], [aria-label*=textchat], [aria-label*=vc-text], [aria-label*=vctext], [aria-label*=voice-chat], [aria-label*=voice-room], [aria-label*=voice-text], [aria-label*=voiceroom], [aria-label^=text]) .iconContainer-21RCa3 {
   --icon: var(--icon-keyboard);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=book] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=diary] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=homework] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=lore] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=stories] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=story] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=tutorial] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=book], [aria-label*=diary], [aria-label*=homework], [aria-label*=lore], [aria-label*=stories], [aria-label*=story], [aria-label*=tutorial]) .iconContainer-21RCa3 {
   --icon: var(--icon-book);
   background-color: var(--icon-color)
 }
@@ -935,9 +806,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=education] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=school] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=study] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=education], [aria-label*=school], [aria-label*=study], [aria-label*=learn], [aria-label*=university], [aria-label*=college]) .iconContainer-21RCa3 {
   --icon: var(--icon-school);
   background-color: var(--icon-color)
 }
@@ -947,38 +816,27 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=gift] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=giveaway] .iconContainer-21RCa3 {
-  --icon: var(--icon-gift);
-  background-color: var(--icon-color)
-}
-
 .container-1NXEtd a[aria-label*=science] .iconContainer-21RCa3 {
   --icon: var(--icon-science);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=drama] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=theater] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=theater], [aria-label*=drama]) .iconContainer-21RCa3 {
   --icon: var(--icon-theater);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=flag] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=goal] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=report] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=flag], [aria-label*=goal], [aria-label*=report]) .iconContainer-21RCa3 {
   --icon: var(--icon-flag);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=hobbies] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=hobby] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=interest] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=hobbies], [aria-label*=hobby], [aria-label*=interest]) .iconContainer-21RCa3 {
   --icon: var(--icon-hobby);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=piano] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=piano], [aria-label*=keyboard], [aria-label*=instrument]) .iconContainer-21RCa3 {
   --icon: var(--icon-piano);
   background-color: var(--icon-color)
 }
@@ -988,8 +846,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=calendar] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=event] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=calendar], [aria-label*=event]) .iconContainer-21RCa3 {
   --icon: var(--icon-event);
   background-color: var(--icon-color)
 }
@@ -1009,8 +866,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=document] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=sheet] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=document], [aria-label*=word], [aria-label*=note]) .iconContainer-21RCa3 {
   --icon: var(--icon-document);
   background-color: var(--icon-color)
 }
@@ -1030,23 +886,17 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=bulletin] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=pinned] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=pins] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=pins], [aria-label*=pinned], [aria-label*=bulletin]) .iconContainer-21RCa3 {
   --icon: var(--icon-pin);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=dj] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=jukebox] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=music-bot] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=music] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=radio] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=tunes] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=music], [aria-label*=radio], [aria-label*=tunes], [aria-label*=dj], [aria-label*=jukebox], [aria-label*=music-bot]) .iconContainer-21RCa3 {
   --icon: var(--icon-music);
   background-color: var(--icon-color)
 }
 
+/* TODO: figure out what this does */
 .container-1NXEtd .modeLocked-3sToxd a .iconContainer-21RCa3 {
   --icon: unset;
   background-color: rgba(0, 0, 0, 0)
@@ -1099,8 +949,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=tweet] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=twitter] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=tweet], [aria-label*=twitter]) .iconContainer-21RCa3 {
   --icon: var(--icon-twitter);
   background-color: var(--icon-color)
 }
@@ -1125,15 +974,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=discord] .iconContainer-21RCa3 {
-  --icon: var(--icon-discord);
-  background-color: var(--icon-color)
-}
-
-.container-1NXEtd a[aria-label*=booster] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=discord-nitro] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=nitro-booster] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=nitro] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=booster], [aria-label*=discord-nitro], [aria-label*=nitro-booster], [aria-label*=nitro]) .iconContainer-21RCa3 {
   --icon: var(--icon-discord-nitro);
   background-color: var(--icon-color)
 }
@@ -1173,8 +1014,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=lfg] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=looking-for-game] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=lfg], [aria-label*=looking-for-game]) .iconContainer-21RCa3 {
   --icon: var(--icon-games-lfg);
   background-color: var(--icon-color)
 }
@@ -1189,8 +1029,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=e3-] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label^=e3] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=e3-], [aria-label^=e3]) .iconContainer-21RCa3 {
   --icon: var(--icon-e3);
   background-color: var(--icon-color)
 }
@@ -1230,8 +1069,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=mincraft] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=minecraft] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=mincraft], [aria-label*=minecraft]) .iconContainer-21RCa3 {
   --icon: var(--icon-game-minecraft);
   background-color: var(--icon-color)
 }
@@ -1271,31 +1109,27 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=star-wars] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=starwars] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=star-wars], [aria-label*=starwars]) .iconContainer-21RCa3 {
   --icon: var(--icon-starwars);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=d20] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=dnd] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=dungeons-and-dragons] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=d20], [aria-label*=dungeons-and-dragons], [aria-label*=dnd], [aria-label*="d&d"]) .iconContainer-21RCa3 {
   --icon: var(--icon-d20);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=amogus] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=among-us] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=amogus], [aria-label*=among-us], [aria-label^=sus], [aria-label*=imposter]) .iconContainer-21RCa3 {
   --icon: var(--icon-game-amogus);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=portal] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=portal], [aria-label*=portal-2], [aria-label*=wheatly], [aria-label*=glados], [aria-label*=glad0s]) .iconContainer-21RCa3 {
   --icon: var(--icon-game-portal);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=half-life] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=half-life], [aria-label*=half-life-2], [aria-label*=black-mesa], [aria-label*=blackmesa], [aria-label*=opposing-force]) .iconContainer-21RCa3 {
   --icon: var(--icon-game-half-life);
   background-color: var(--icon-color)
 }
@@ -1305,26 +1139,17 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=payday] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=payday], [aria-label*=payday-2]) .iconContainer-21RCa3 {
   --icon: var(--icon-game-payday);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=football] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=soccer] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=football], [aria-label*=soccer]) .iconContainer-21RCa3 {
   --icon: var(--icon-football);
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=football] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=soccer] .iconContainer-21RCa3 {
-  --icon: var(--icon-football);
-  background-color: var(--icon-color)
-}
-
-.container-1NXEtd a[aria-label*=american-football] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=grid-iron] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=gridiron] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=american-football], [aria-label*=grid-iron], [aria-label*=gridiron]) .iconContainer-21RCa3 {
   --icon: var(--icon-gridiron);
   background-color: var(--icon-color)
 }
@@ -1339,16 +1164,8 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a[aria-label*=surf] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=surfing] .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=surf], [aria-label*=surfing]) .iconContainer-21RCa3 {
   --icon: var(--icon-surfing);
-  background-color: var(--icon-color)
-}
-
-.container-1NXEtd a[aria-label*=formula-1] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=motor-sport] .iconContainer-21RCa3,
-.container-1NXEtd a[aria-label*=motorsport] .iconContainer-21RCa3 {
-  --icon: var(--icon-motorsport);
   background-color: var(--icon-color)
 }
 
@@ -1369,11 +1186,6 @@
 
 .container-1NXEtd a[aria-label*=kayaking] .iconContainer-21RCa3 {
   --icon: var(--icon-kayaking);
-  background-color: var(--icon-color)
-}
-
-.container-1NXEtd a[aria-label*=skateboarding] .iconContainer-21RCa3 {
-  --icon: var(--icon-skateboarding);
   background-color: var(--icon-color)
 }
 
@@ -1441,5 +1253,5 @@
   [aria-label=Scenekanal]
 ) .iconContainer-21RCa3 {
   --icon: none !important;
-  background-color: transparent
+  background-color: transparent !important
 }

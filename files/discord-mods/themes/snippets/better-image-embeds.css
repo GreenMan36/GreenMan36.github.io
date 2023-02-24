@@ -2,7 +2,7 @@
  * @name Better Image Embeds
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 14.02.23b
+ * @version 24.02.23a
  * @description A small snippet that makes image embeds look better and not zoomed/blurred.
 */
 
@@ -43,11 +43,15 @@
   /* quick lil fix for people who like to send 1x1/small images */
   min-width: 32px;
   min-height: 32px;
+  /* fix for single image embeds being wide af */
+  width: fit-content;
+  position: relative;
 }
 
-/* fix for single image embeds + gif */
-.inlineMediaEmbed-1m3ApS .imageContent-3Av-9c .imageContainer-10XenG {
-  width: fit-content;
+/* fix for remove embed button in threads */
+.removeAttachmentButton-1iO1qS {
+  position: absolute;
+  right: 4px;
 }
 
 /* grids don't resize properly so unset lets them take their space */

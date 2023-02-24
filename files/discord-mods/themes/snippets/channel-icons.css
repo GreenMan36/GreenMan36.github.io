@@ -2,7 +2,7 @@
  * @name Channel Icons
  * @author Alexis | WyvernZu#0001
  * @authorLink https://github.com/AlexisJonsson
- * @version 15.02.23a
+ * @version 24.02.23a
  * @description Adds icons to channels. Made into a snippet and updated by GreenMan36#0633
 */
 
@@ -643,7 +643,7 @@
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a:is([aria-label*=icon], [aria-label^=ui], [aria-label*=ux], [aria-label*=user-experience]) .iconContainer-21RCa3
+.container-1NXEtd a:is([aria-label^=ui], [aria-label*=ux], [aria-label*=user-experience]) .iconContainer-21RCa3
 /* .container-1NXEtd a[aria-label*=user-interface] .iconContainer-21RCa3 */
 /* TODO: FIX USER-INTERFACE */
 {

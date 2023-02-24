@@ -2,7 +2,7 @@
  * @name Channel Icons
  * @author Alexis | WyvernZu#0001
  * @authorLink https://github.com/AlexisJonsson
- * @version 24.02.23a
+ * @version 24.02.23b
  * @description Adds icons to channels. Made into a snippet and updated by GreenMan36#0633
 */
 
@@ -210,6 +210,11 @@
 
 .iconContainer-21RCa3 {
   margin-right: 10px
+}
+
+/* makes the channel icon use the same color as the icons so it doesn't show double */
+svg.icon-2W8DHg {
+  color: var(--icon-color);
 }
 
 .container-1NXEtd .containerDefault-YUSmu3.selected-2TbFuo,

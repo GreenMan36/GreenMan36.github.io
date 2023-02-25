@@ -217,25 +217,26 @@ svg.icon-2W8DHg {
   color: var(--icon-color);
 }
 
-.container-1NXEtd .containerDefault-YUSmu3.selected-2TbFuo,
-.container-1NXEtd .containerDragAfter-3aBiOW.selected-2TbFuo,
-.container-1NXEtd .containerDragBefore-1s5Qg6.selected-2TbFuo {
+.container-1NXEtd :is(
+  .containerDefault-YUSmu3.selected-2TbFuo,
+  .containerDragAfter-3aBiOW.selected-2TbFuo,
+  .containerDragBefore-1s5Qg6.selected-2TbFuo
+) {
   --icon-color: var(--interactive-active)
 }
 
-.modeMuted-2T4MDZ .iconContainer-21RCa3 {
-  --icon-color: var(--interactive-muted)
-}
-
-.container-1NXEtd .containerDefault-YUSmu3.selected-2TbFuo .iconContainer-21RCa3 svg path,
-.container-1NXEtd .containerDragAfter-3aBiOW.selected-2TbFuo .iconContainer-21RCa3 svg path,
-.container-1NXEtd .containerDragBefore-1s5Qg6.selected-2TbFuo .iconContainer-21RCa3 svg path {
+.container-1NXEtd :is(
+  .containerDefault-YUSmu3,
+  .containerDragAfter-3aBiOW,
+  .containerDragBefore-1s5Qg6
+).selected-2TbFuo .iconContainer-21RCa3 svg path
+/* the following is a patch! */
+,.container-1NXEtd .containerDefault-YUSmu3 .iconContainer-21RCa3 svg path {
   fill: var(--icon-color)
 }
 
-.container-1NXEtd .containerDefault-YUSmu3,
-.container-1NXEtd .containerDragAfter-3aBiOW,
-.container-1NXEtd .containerDragBefore-1s5Qg6 {
+.container-1NXEtd,
+.pageBody-23bo4p {
   --icon-color: var(--text-muted)
 }
 

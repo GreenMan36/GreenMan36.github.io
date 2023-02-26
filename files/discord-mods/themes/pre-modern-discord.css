@@ -2,7 +2,7 @@
  * @name Greens Premodern Discord
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 05.02.23a
+ * @version 26.02.23a
  * @description A theme that just steals the colors from Alexis Modern Discord
 */
 
@@ -13,6 +13,7 @@
 @import url(https://greenman36.github.io/files/discord-mods/themes/snippets/channel-icons.css);
 @import url(https://greenman36.github.io/files/discord-mods/themes/snippets/better-image-embeds.css);
 @import url(https://greenman36.github.io/files/discord-mods/themes/snippets/outline-dark-emojis.css);
+@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/better-context-menu.css);
 
 /* used for theme name and version, DO NOT TOUCH */
 :root {

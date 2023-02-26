@@ -1,7 +1,7 @@
 /**
- * @name Context Menu Icons
+ * @name Better Context Menu
  * @author Alexis | WyvernZu#0001
- * @version 25.02.23a
+ * @version 26.02.23a
  * @description Adds icons to the context menu. Made into a snippet and updated by GreenMan36#0633, idea & some additional work by wendjy's#9114
 */
 
@@ -99,4 +99,53 @@
 
 [role="group"] > [role="menuitem"]:hover:after {
     background-color: var(--brand-experiment-600);  
+}
+
+
+[role="group"]:has(#user-context-user-profile,
+#user-context-mention,
+#user-context-message-user,
+#user-context-call,
+#user-context-note,
+#user-context-add-friend-nickname,
+#user-context-edit-friend-nickname,
+#user-context-close-dm) {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Volume slider section */
+div#user-context-invite-to-server {
+    display: none;
+}
+
+#user-context-user-volume:has(.sliderContainer-2nidiS) > .labelContainer-2vJzYL {
+    display: none;
+}
+
+.sliderContainer-2nidiS {
+    position: relative;
+}
+
+#user-context-user-volume:has(.sliderContainer-2nidiS div:hover) > .labelContainer-2vJzYL {
+    display: unset;
+    position: absolute;
+    text-align: center;
+    left: 8px;
+    right: 0;
+    transform: translateY(14px);
+}
+
+#user-context-user-volume:has(.sliderContainer-2nidiS:hover) > .labelContainer-2vJzYL > * {
+    width: 100%;
+    background: var(--brand-experiment-600);
+    border-radius: 4px;
+}
+
+.slider-1mmyV6.slider-BEB8u7.mini-28oMa3 {
+    top: -6px;
+}
+
+div[role="group"]:has(#user-context-user-volume) {
+    height: 30px;
 }

@@ -1,9 +1,13 @@
 /**
  * @name Better Context Menu
  * @author Alexis | WyvernZu#0001
- * @version 26.02.23a
+ * @version 01.03.23a
  * @description Adds icons to the context menu. Made into a snippet and updated by GreenMan36#0633, idea & some additional work by wendjy's#9114
 */
+
+:root {
+    --hide-context-menu-invite-to-server: none; /* Discord default: flex */
+}
 
 #user-context-user-profile,
 #user-context-mention,
@@ -116,18 +120,18 @@
 
 /* Volume slider section */
 div#user-context-invite-to-server {
+    display: var(--hide-context-menu-invite-to-server);
+}
+
+#user-context-user-volume:has(.sliderContainer-3vLXjN) > .labelContainer-35-WEd {
     display: none;
 }
 
-#user-context-user-volume:has(.sliderContainer-2nidiS) > .labelContainer-2vJzYL {
-    display: none;
-}
-
-.sliderContainer-2nidiS {
+.sliderContainer-3vLXjN {
     position: relative;
 }
 
-#user-context-user-volume:has(.sliderContainer-2nidiS div:hover) > .labelContainer-2vJzYL {
+#user-context-user-volume:has(.sliderContainer-3vLXjN div:hover) > .labelContainer-35-WEd {
     display: unset;
     position: absolute;
     text-align: center;
@@ -136,13 +140,13 @@ div#user-context-invite-to-server {
     transform: translateY(14px);
 }
 
-#user-context-user-volume:has(.sliderContainer-2nidiS:hover) > .labelContainer-2vJzYL > * {
+#user-context-user-volume:has(.sliderContainer-3vLXjN:hover) > .labelContainer-35-WEd > * {
     width: 100%;
     background: var(--brand-experiment-600);
     border-radius: 4px;
 }
 
-.slider-1mmyV6.slider-BEB8u7.mini-28oMa3 {
+.slider-1mmyV6.slider-cXPmnn.mini-28oMa3 {
     top: -6px;
 }
 

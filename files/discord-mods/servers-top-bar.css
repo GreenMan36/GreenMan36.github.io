@@ -1,0 +1,176 @@
+/**
+ * @name Hoverable Top Bar Servers List
+ * @author GreenMan36#0633
+ * @authorLink https://github.com/AlexisJonsson
+ * @version 02.03.23-INDEV-A
+ * @description Moves the servers list to the top of the screen, folders are shown on hover if they're open.
+*/
+
+/* NOTE: THIS IS A MESS RIGHT NOW AND IN-DEVELOPMENT!!! */
+/* YOU HAVE BEEN WARNED */
+
+.base-2jDfDU {
+    inset: 0;
+    top: 68px;
+    height: calc(100% - 64px);
+}
+
+nav.wrapper-1_HaEi.guilds-2JjMmN {
+    position: absolute;
+    inset: 0;
+    z-index: 110;
+    width: unset;
+    height: 60px;
+    transition: height .1s ease-in .25s;
+    overflow: visible;
+    background: none;
+    border-radius: 0 0 96px 96px;
+    transition-property: height, backdrop-filter, background-color;
+    backdrop-filter: blur(0px) saturate(1);
+}
+
+nav.wrapper-1_HaEi.guilds-2JjMmN:has(ul div div[aria-label="Servers"] *:hover) {
+    height: max(300px, 90vh);
+    transition: height .5s;
+}
+
+/* slightly transparent fallback */
+div[aria-label="Servers"] {
+    backdrop-filter: blur(10px);
+    transition: background-color .25s ease-in .1s;
+    transition-property: background-color, backdrop-filter;
+}
+
+/* slightly transparent fallback */
+div[aria-label="Servers"]:has(*:hover) {
+    backdrop-filter: blur(10px);
+    transition: background-color .5s ease-in;
+    transition-property: background-color, backdrop-filter;
+}
+
+.guildSeparator-a4uisj {
+    width: 2px;
+    height: 32px;
+}
+
+.unreadMentionsIndicatorTop-2bTgUU::before {
+    background: black;
+}
+
+.scroller-3X7KbA.none-1rXy4P.scrollerBase-1Pkza4 {
+    display: flex;
+    background: none;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+    height: min-content;
+}
+
+div[aria-label="Servers"] {
+    padding-top: 0px;
+    display: flex;
+    overflow: auto;
+    border-radius: 0 0 24px 24px;
+}
+
+div[aria-label="Servers"]::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.unreadMentionsIndicatorBottom-3RJMnQ {
+    right: 48px;
+    /* transform: translateY(calc(-55%)); */
+    top: -8px;
+    left: auto;
+}
+
+.unreadMentionsIndicatorTop-2bTgUU {
+    left: 108px;
+    top: -8px;
+}
+
+span.expandedFolderBackground-1kSAf6 {
+    transform: translateX(-10px);
+}
+
+div[aria-label="Servers"] > div {
+    display: flex;
+    flex-direction: column;
+    width: 72px;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+}
+
+
+.listItem-3SmSlK {
+    width: auto;
+}
+
+ul[role="tree"] .listItem-3SmSlK,
+.tutorialContainer-1pL9QS {
+    display: flex;
+    padding: 8px 2px;
+}
+
+.wrapper-38slSD ul .listItem-3SmSlK, * {
+    padding: 0px 0;
+}
+
+ul[role="tree"] .tutorialContainer-1pL9QS .listItem-3SmSlK {
+    padding-top: 0;
+}
+
+
+/*
+uncomment this to make folder contents float
+*/
+span.expandedFolderBackground-1kSAf6 {
+    display: none;
+}
+
+div[aria-label="Servers"] > div > ul {
+    background: rgba(0, 0, 0, .3);
+    border-radius: 42px;
+    width: 48px;
+    height: auto !important;
+}
+
+div[aria-label="Servers"] > div > ul > div:last-child {
+    margin: 0;
+}
+
+
+.scrollerBase-_bVAAt.listItem-3SmSlK,
+.scrollerBase-_bVAAt .tutorialContainer-2jwoiB {
+    display: none;
+} 
+
+/* 
+uncomment to hide the new messages indicator
+ */
+.unreadMentionsIndicatorBottom-3RJMnQ {
+    display: none;
+}
+
+.unreadMentionsIndicatorTop-2bTgUU {
+    display: none;
+}
+
+.scroller-3X7KbA.none-2-_0dP.scrollerBase-_bVAAt {
+    padding-right: 0 !important;
+    padding-top: 0;
+}
+
+
+.container-1eFtFS {display: flex;}
+
+[aria-label="Servers"] .wrapper-38slSD {
+    background-color: rgba(100, 10, 10, .5);
+    backdrop-filter: blur(10px);
+}
+
+.layers-OrUESM.layers-1YQhyW {
+    position: relative;
+}

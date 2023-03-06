@@ -2,7 +2,7 @@
  * @name Greens Premodern Discord
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 26.02.23a
+ * @version 06.03.23a
  * @description A theme that just steals the colors from Alexis Modern Discord
 */
 
@@ -18,7 +18,7 @@
 /* used for theme name and version, DO NOT TOUCH */
 :root {
     --theme-name: "Greens Premodern Discord";
-    --version: "05.02.23a";
+    --version: "06.03.23a";
 }
 
 /* these can be customized. just copy/paste the whole thing into your custom CSS and mess around with it. */
@@ -325,7 +325,8 @@ section.panels-3wFtMD {
     margin-top: calc(var(--border-radius) * 1.5);
 }
 
-.panels-3wFtMD {
+/* call/activity panel */
+:is(.theme-dark, .theme-light) .panel-2ZFCRb {
     background: var(--background-tertiary);
 }
 

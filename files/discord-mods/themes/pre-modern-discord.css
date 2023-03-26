@@ -2,7 +2,7 @@
  * @name Greens Premodern Discord
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 26.03.23a
+ * @version 26.03.23b
  * @description A theme that steals the colors from Alexis Modern Discord and adds a few tweaks of my own.
 */
 
@@ -120,9 +120,7 @@
     text-transform: capitalize
 }
 
-.guild-profile,
 .theme-dark,
-.theme-dark .theme-light,
 [aria-label="User Profile Modal"],
 [class^=profileBannerPreview] {    
     --modal-background: #181818;

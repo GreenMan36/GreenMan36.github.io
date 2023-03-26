@@ -1,0 +1,12 @@
+/**
+ * @name Fix titlebar dragarea
+ * @author GreenMan36#0633
+ * @authorLink https://github.com/GreenMan36
+ * @version 26.03.23a
+ * @description The drag area of the titlebar has a margin-top of 4px, which makes it not drag the window when you flick click to the top.
+ */
+
+.withFrame-2dL45i {
+    margin-top: 0;
+    padding-top: 4px;
+}

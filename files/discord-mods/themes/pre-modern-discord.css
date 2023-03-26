@@ -14,6 +14,7 @@
 @import url(https://greenman36.github.io/files/discord-mods/themes/snippets/better-image-embeds.css);
 @import url(https://greenman36.github.io/files/discord-mods/themes/snippets/outline-dark-emojis.css);
 @import url(https://greenman36.github.io/files/discord-mods/themes/snippets/better-context-menu.css);
+@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/floating-top-notifications-bar.css);
 
 /* used for theme name and version, DO NOT TOUCH */
 :root {
@@ -405,32 +406,4 @@ span.expandedFolderBackground-1kSAf6 {
 .theme-light .container-YkUktl,
 .container-1zzFcN {
     background: var(--background-tertiary) !important;
-}
-
-/* make the notice bar floating */
-.notice-2HEN-u {
-    z-index: 1003;
-    display: flex;
-    padding: 4px 24px;
-    position: absolute;
-    border-radius: 10px;
-    transform: translateX(calc(50vw - 50%)) translateY(64px);
-    max-width: calc(100vw - 256px);
-}
-
-/* force everything to work nicely with the flexbox */
-.notice-2HEN-u * {
-    position: relative;
-    height: unset;
-    inset: 0;
-}
-
-/* fixes the nitro icon */
-.notice-2HEN-u .premiumIcon-2HhTvp {
-    min-width: 24px;
-}
-
-/* viewing as role notice, back button */
-.notice-2HEN-u :is(.button-29sJG8.backButton-3I5R-E, .back-ZdqB1k) {
-    margin: 0 16px 0 0;
 }

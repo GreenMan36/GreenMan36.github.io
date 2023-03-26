@@ -2,12 +2,12 @@
  * @name Resize reactions
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 26.03.23a
+ * @version 26.03.23b
  * @description Resizes reactions to be bigger or smaller. (Bigger)
 */
 
 :root {
-    --resizeEmojiSize: 2;
+    --resizeEmojiSize: 1.31; /* this should make the reactions about the same size as reactions in the message */
 }
 
 /* on messages */

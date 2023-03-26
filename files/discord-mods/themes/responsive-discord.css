@@ -32,7 +32,7 @@
     --blur: blur(2px);
     --blur-bg: rgb(0 0 0 / 10%);
   
-    --sidebars-animation: var(--sidebar-animation-speed) ease-out 0.1s;
+    --sidebars-transition: var(--sidebar-animation-speed) ease-out 0.1s;
 }
 
 /* Image carrousel */
@@ -117,7 +117,7 @@
 
 /* animations */
 .container-2o3qEW, .sidebar-1tnWFu {
-    transition: max-width var(--sidebars-animation);
+    transition: max-width var(--sidebars-transition);
 }/* change fullscreen popout background */
 .backdrop-2ByYRN.withLayer-2VVmpp {
     transition: all .2s ease-in-out;
@@ -198,12 +198,12 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c{
         right: -194px;
         bottom: 0;
         z-index: 2;
-        transition: right var(--sidebars-animation);
+        transition: right var(--sidebars-transition);
     }
 
     aside.container-1oAagU {
         max-width: 164px;
-        transition: max-width var(--sidebars-animation);
+        transition: max-width var(--sidebars-transition);
     }
 
     /* make the scrollable container take less space */
@@ -247,7 +247,7 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c{
 }
 
 /* only enable colapsing left side bars when below this window size */
-@media only screen and (max-width: 999px) {
+@media (max-width: 999px) {
     .sidebar-1tnWFu {
         max-width: 128px;
         position: absolute;
@@ -268,7 +268,7 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c{
 
     div#channels:not(:hover) {
         padding-right: 0px !important;
-        transition: padding-right var(--sidebars-animation);
+        transition: padding-right var(--sidebars-transition);
     }
 
     /* expand channelbar on hover */
@@ -291,9 +291,7 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c{
 }
 
 /* only enable colapsing member bar when below this window size */
-@media only screen and (max-width: 1919px) {
-    
-    
+@media (max-width: 1919px) {
     .container-2o3qEW {
         max-width: 60px;
         position: absolute;
@@ -332,21 +330,21 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c{
     }
 }
 
-@media only screen and (max-width: 1218px) {
+@media (max-width: 1290px) {
     /* fix forum */
     .container-3XgAHv /*:not(.chatTarget-3H6mpC)*/ {
         position: absolute;
         right: -440px;
         bottom: 0;
         top: 0;
-        transition: right var(--sidebars-animation);
+        transition: right var(--sidebars-transition);
         transition-delay: .5s;
         width: 500px !important
     }
     
     .chatLayerWrapper-2mgEK- > .container-3XgAHv:hover {
         right: 0;
-        transition: right var(--sidebars-animation);
+        transition: right var(--sidebars-transition);
         transition-duration: .05s;
     }
 
@@ -409,4 +407,29 @@ border-radius: 8px;
 /* patch the images in the user call area */
 button.button-1EGGcP {
     padding: 0;
+}
+
+/* fix the call area when chat is open */
+@media only screen and (max-width: 1312px) {
+    .chat-2ZfjoI:has(.chatSidebarOpen--YCxhs) {
+        background: transparent !important;
+        padding-right: 60px;
+    }
+
+    .container-3XgAHv.floating-3M3WeH {
+        transition: right var(--sidebars-transition);
+        transition-delay: .5s;
+        right: -390px;
+    }
+    
+    .container-3XgAHv.floating-3M3WeH:hover {
+        transition: right 0s;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 1290px) {
+    .container-3XgAHv.floating-3M3WeH {
+        right: -440px;
+    }
 }

@@ -2,8 +2,8 @@
  * @name Greens Premodern Discord
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 06.03.23a
- * @description A theme that just steals the colors from Alexis Modern Discord
+ * @version 26.03.23a
+ * @description A theme that steals the colors from Alexis Modern Discord and adds a few tweaks of my own.
 */
 
 /*
@@ -286,13 +286,6 @@
     border-top-left-radius: clamp(4px, calc(var(--border-radius) * 1.5), 40px);
 }
 
-/* temp join top bar https://i.imgur.com/SVj21rz.png */
-.notice-12Koq-,
-.notice-2HEN-u {
-    border-bottom-left-radius: clamp(4px, calc(var(--border-radius) * 1.5), 16px);
-    border-top-left-radius: clamp(4px, calc(var(--border-radius) * 1.5), 16px);
-}
-
 /* don't make this overflow hidden or typing a big message will push the memberbar out of view. Idk why. 
 https://i.imgur.com/5RDybX0.png*/
 .container-2o3qEW {
@@ -416,20 +409,28 @@ span.expandedFolderBackground-1kSAf6 {
 
 /* make the notice bar floating */
 .notice-2HEN-u {
+    z-index: 1003;
+    display: flex;
     padding: 4px 24px;
     position: absolute;
     border-radius: 10px;
+    transform: translateX(calc(50vw - 50%)) translateY(64px);
+    max-width: calc(100vw - 256px);
 }
 
+/* force everything to work nicely with the flexbox */
 .notice-2HEN-u * {
     position: relative;
+    height: unset;
+    inset: 0;
+}
+
+/* fixes the nitro icon */
+.notice-2HEN-u .premiumIcon-2HhTvp {
+    min-width: 24px;
 }
 
 /* viewing as role notice, back button */
-.notice-2HEN-u .button-29sJG8.backButton-3I5R-E {
+.notice-2HEN-u :is(.button-29sJG8.backButton-3I5R-E, .back-ZdqB1k) {
     margin: 0 16px 0 0;
-}
-
-.notice-2HEN-u {
-    transform: translateX(calc(50vw - 50%)) translateY(64px);
 }

@@ -1,0 +1,23 @@
+/**
+ * @name Resize reactions
+ * @author GreenMan36#0633
+ * @authorLink https://github.com/GreenMan36
+ * @version 26.03.23a
+ * @description Resizes reactions to be bigger or smaller. (Bigger)
+*/
+
+:root {
+    --resizeEmojiSize: 2;
+}
+
+/* on messages */
+.reaction-3vwAF2 img.emoji {
+    width: clamp(12px, calc(var(--resizeEmojiSize) * 1rem), 32px);
+    height: clamp(12px, calc(var(--resizeEmojiSize) * 1rem), 32px);
+}
+
+/* on forum threads, limited to 1.25x for overflow reasons */
+.reaction-102jx9 .emoji {
+    width: clamp(12px, calc(var(--resizeEmojiSize) * 1rem), 20px);
+    height: clamp(12px, calc(var(--resizeEmojiSize) * 1rem), 20px);
+}

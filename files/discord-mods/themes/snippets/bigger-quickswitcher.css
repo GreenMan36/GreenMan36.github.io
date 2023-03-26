@@ -1,0 +1,32 @@
+/**
+ * @name Bigger quickswitcher
+ * @author GreenMan36#0633
+ * @version 26.03.23a
+ * @authorLink https://github.com/GreenMan36
+ * @description Makes the quickswitcher be bigger and thus show more results.
+*/
+
+:root {
+    --bigger-quickswitcher: min-content; /* set to 80vh if the below is set to unset */
+    --position-quickswitcher: absolute; /* unset to keep it in the center */
+    --top-offset-quickswitcher: 48px; /* only works if the above is set */
+}
+
+.focusLock-bHVOlV:has(div .quickswitcher-pKcM9U) {
+    position: var(--position-quickswitcher);
+    top: var(--top-offset-quickswitcher);
+}
+
+.container-qBnZJg {
+    height: unset;
+}
+
+.quickswitcher-pKcM9U,
+.quickswitcher-pKcM9U :is(.scroller-2qwVWY) {
+    max-height: calc(100vh - 100px);
+    height: clamp(410px, var(--bigger-quickswitcher), 0);
+}
+
+.emptyState-1OLqEw {
+    flex-grow: 1;
+}

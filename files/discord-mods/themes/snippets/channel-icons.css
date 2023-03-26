@@ -1,8 +1,8 @@
 /**
  * @name Channel Icons
- * @author Alexis | WyvernZu#0001
+ * @author Alexis | WyvernZu#0001 | GreenMan36#0633
  * @authorLink https://github.com/AlexisJonsson
- * @version 24.02.23b
+ * @version 26.03.23a
  * @description Adds icons to channels. Made into a snippet and updated by GreenMan36#0633
 */
 
@@ -513,7 +513,7 @@ svg.icon-2W8DHg {
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a:is([aria-label*=new-member], [aria-label*=partner], [aria-label*=supporter], [aria-label*=welcome], [aria-label*=arrivals]) .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=new-member], [aria-label*=partner], [aria-label*=supporter], [aria-label*=welcome], [aria-label*=welkom], [aria-label*=arrivals]) .iconContainer-21RCa3 {
   --icon: var(--icon-welcome);
   background-color: var(--icon-color)
 }
@@ -742,7 +742,7 @@ svg.icon-2W8DHg {
   background-color: var(--icon-color)
 }
 
-.container-1NXEtd a:is([aria-label*=chat], [aria-label*=discussion], [aria-label*=general], [aria-label*=message], [aria-label*=off-topic], [aria-label*=offtopic]) .iconContainer-21RCa3 {
+.container-1NXEtd a:is([aria-label*=chat], [aria-label*=discussion], [aria-label*=general], [aria-label*=algemeen], [aria-label*=message], [aria-label*=off-topic], [aria-label*=offtopic]) .iconContainer-21RCa3 {
   --icon: var(--icon-discussion);
   background-color: var(--icon-color)
 }

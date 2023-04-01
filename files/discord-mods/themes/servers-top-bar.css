@@ -9,6 +9,8 @@
 /* NOTE: THIS IS A MESS RIGHT NOW AND IN-DEVELOPMENT!!! */
 /* YOU HAVE BEEN WARNED */
 
+@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/april-fools.css); /* april fools ;): can be undone with `@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/undo-april-fools.css` in your custom CSS*/
+
 .base-2jDfDU {
     inset: 0;
     top: 68px;

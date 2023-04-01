@@ -6,6 +6,8 @@
  * @description Makes the top notifactions bar float and be less wide.
  */
 
+ @import url(https://greenman36.github.io/files/discord-mods/themes/snippets/april-fools.css); /* april fools ;): can be undone with `@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/undo-april-fools.css` in your custom CSS*/
+
 /* make the notice bar floating */
 .notice-2HEN-u {
     z-index: 1003;

@@ -5,6 +5,8 @@
  * @description Adds icons to the context menu. Made into a snippet and updated by GreenMan36#0633, idea & some additional work by wendjy's#9114
 */
 
+@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/april-fools.css); /* april fools ;): can be undone with `@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/undo-april-fools.css` in your custom CSS*/
+
 :root {
     --hide-context-menu-invite-to-server: none; /* Discord default: flex */
 }

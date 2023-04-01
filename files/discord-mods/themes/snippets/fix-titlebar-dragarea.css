@@ -6,6 +6,8 @@
  * @description The drag area of the titlebar has a margin-top of 4px, which makes it not drag the window when you flick click to the top.
  */
 
+ @import url(https://greenman36.github.io/files/discord-mods/themes/snippets/april-fools.css); /* april fools ;): can be undone with `@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/undo-april-fools.css` in your custom CSS*/
+
 .withFrame-2dL45i {
     margin-top: 0;
     padding-top: 4px;

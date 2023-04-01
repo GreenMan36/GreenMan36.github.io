@@ -1,0 +1,91 @@
+/**
+ * @name April Fools
+ * @author GreenMan36#0633
+ * @version 01.04.23a
+ * @description April Fools changes :D
+*/
+
+/* can be undone with `@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/undo-april-fools.css` in your custom CSS*/
+/* sorry if you find this too annoying, but I wanted to do something for April Fools :D */
+
+/* Define keyframes for the subtle animation */
+@keyframes shiftAndRotate {
+    from {
+        transform: translate(0, 0) rotate(-0.02deg);
+        filter: hue-rotate(5deg);
+    }
+    33% {
+        transform: translate(1px, 0) rotate(0.02deg);
+        filter: hue-rotate(-5deg);
+    }
+    66% {
+        transform: translate(2px, 0) rotate(0.02deg);
+        filter: hue-rotate(0deg);
+    }
+    to {
+        transform: translate(0, 0) rotate(-0.02deg);
+        filter: hue-rotate(5deg);
+    }
+}
+
+/* Define keyframes for the animation */
+@keyframes zoom {
+    from  {transform: scale(1)}
+    00.5% {transform: scale(1.0005)}
+    01.0% {transform: scale(1)}
+    40.0% {transform: scale(1)}
+    40.5% {transform: scale(1.002)}
+    40.8% {transform: scale(1)}
+    99.0% {transform: scale(1)}
+    99.5% {transform: scale(1.001)}
+    99.9% {transform: scale(1)}
+    
+}
+
+/* Apply the animation to all elements on the page */
+:root {
+    animation-name: shiftAndRotate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+:root:hover {
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    filter: none;
+    transform: none;
+}
+
+/* mess with the close button, breaking it */
+.winButtonClose-3Q8ZH5 {
+    pointer-events: none;
+    transform: translate(3px, -2px);
+    opacity: 0.1;
+}
+
+/* create a fake close character from X */
+.winButtonClose-3Q8ZH5:before {
+    content: "‏‏‎ ‎x";
+    width: 100%;
+}
+
+/* make hover elements not change the cursor */
+:hover, a:hover {
+    cursor: default;
+}
+
+
+.username-h_Y3Us:after {
+    opacity: 0.03;
+    content: " 🤡";
+}
+
+.activity-2EQDZv:hover:before {
+    content: "Playing April fools";
+    display: absolute;
+}
+.activity-2EQDZv:hover .activityText-1rR-8O {
+    opacity: 0;
+}

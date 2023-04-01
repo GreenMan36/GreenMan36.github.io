@@ -1,7 +1,7 @@
 /**
  * @name Undo's the April Fools changes
  * @author GreenMan36#0633
- * @version 01.04.23a
+ * @version 01.04.23b
  * @description They are just so annoying
 */
 
@@ -26,11 +26,6 @@
 .winButtonClose-3Q8ZH5:before {
     content: "" !important;
     width: 0 !important;
-}
-
-/* Restore default cursor on hover */
-:hover, a:hover {
-    cursor: pointer !important;
 }
 
 /* Remove the clown emoji from usernames */

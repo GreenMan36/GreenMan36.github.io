@@ -1,7 +1,7 @@
 /**
  * @name April Fools
  * @author GreenMan36#0633
- * @version 01.04.23a
+ * @version 01.04.23b
  * @description April Fools changes :D
 */
 
@@ -70,12 +70,6 @@
     content: "‏‏‎ ‎x";
     width: 100%;
 }
-
-/* make hover elements not change the cursor */
-:hover, a:hover {
-    cursor: default;
-}
-
 
 .username-h_Y3Us:after {
     opacity: 0.03;

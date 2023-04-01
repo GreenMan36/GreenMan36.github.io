@@ -6,8 +6,6 @@
  * @description This theme makes the Discord client look squared AF.
 */
 
-@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/april-fools.css); /* april fools ;): can be undone with `@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/undo-april-fools.css` in your custom CSS*/
-
 :root {
     --squared-green: hsl(145.38,65%,39.22%);
     --squared-yellow: hsl(40.42,86.36%,56.86%);

@@ -6,8 +6,6 @@
  * @description Makes the quickswitcher be bigger and thus show more results.
 */
 
-@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/april-fools.css); /* april fools ;): can be undone with `@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/undo-april-fools.css` in your custom CSS*/
-
 :root {
     --bigger-quickswitcher: min-content; /* set to 80vh if the below is set to unset */
     --position-quickswitcher: absolute; /* unset to keep it in the center */

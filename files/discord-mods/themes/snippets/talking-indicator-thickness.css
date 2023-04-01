@@ -6,8 +6,6 @@
  * @description Makes the talking indicator thicker. Might have sideaffects.
 */
 
-@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/april-fools.css); /* april fools ;): can be undone with `@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/undo-april-fools.css` in your custom CSS*/
-
 :root {
     --green-inset-thickness: 3px;
 }

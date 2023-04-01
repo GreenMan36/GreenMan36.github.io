@@ -18,7 +18,6 @@
 @import url(https://greenman36.github.io/files/discord-mods/themes/snippets/resize-reactions.css);
 @import url(https://greenman36.github.io/files/discord-mods/themes/snippets/bigger-quickswitcher.css);
 @import url(https://greenman36.github.io/files/discord-mods/themes/snippets/floating-top-notifications-bar.css);
-@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/april-fools.css); /* april fools ;): can be undone with `@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/undo-april-fools.css` in your custom CSS*/
 
 /* used for theme name and version, DO NOT TOUCH */
 :root {

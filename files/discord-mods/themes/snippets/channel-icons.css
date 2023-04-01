@@ -6,8 +6,6 @@
  * @description Adds icons to channels. Made into a snippet and updated by GreenMan36#0633
 */
 
-@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/april-fools.css); /* april fools ;): can be undone with `@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/undo-april-fools.css` in your custom CSS*/
-
 :root {
   --icon-announcements: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M18 11v2h4v-2h-4zm-2 6.61c.96.71 2.21 1.65 3.2 2.39.4-.53.8-1.07 1.2-1.6-.99-.74-2.24-1.68-3.2-2.4-.4.54-.8 1.08-1.2 1.61zM20.4 5.6c-.4-.53-.8-1.07-1.2-1.6-.99.74-2.24 1.68-3.2 2.4.4.53.8 1.07 1.2 1.6.96-.72 2.21-1.65 3.2-2.4zM4 9c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h1v4h2v-4h1l5 3V6L8 9H4zm11.5 3c0-1.33-.58-2.53-1.5-3.35v6.69c.92-.81 1.5-2.01 1.5-3.34z'/%3E%3C/svg%3E");
   --icon-github: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cdefs/%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath d='M12 1.5C6.2 1.5 1.5 6.2 1.5 12c0 4.6 3.1 8.6 7.2 10 .5.1.7-.2.7-.5v-2c-3 .7-3.6-1.2-3.6-1.2-.4-1.3-1.2-1.6-1.2-1.6-.9-.6.1-.6.1-.6 1.1.1 1.6 1.1 1.6 1.1.9 1.7 2.5 1.2 3.1.9.1-.6.3-1.2.6-1.4-2.3-.3-4.9-1.2-4.9-5.2 0-1.2.4-2.1 1.1-2.8 0-.4-.3-1.5.2-3 0 0 .8-.3 3 1.1.8-.1 1.7-.3 2.6-.3.8 0 1.8.1 2.6.3 2-1.4 2.8-1.1 2.8-1.1.5 1.5.2 2.5.1 2.7.6.7 1.1 1.7 1.1 2.8 0 4-2.4 5-4.9 5.2.4.3.7.9.7 2v3c0 .3.2.6.7.5 4.2-1.4 7.2-5.4 7.2-10C22.5 6.2 17.8 1.5 12 1.5z'/%3E%3C/svg%3E");

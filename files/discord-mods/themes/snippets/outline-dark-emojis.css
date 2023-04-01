@@ -6,8 +6,6 @@
  * @description A small snippet that makes dark emojis have a outline for visibility. ALL credits to @asportnoy#6969. I, GreenMan36#0633 just made a small edit to the snippet.
 */
 
-@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/april-fools.css); /* april fools ;): can be undone with `@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/undo-april-fools.css` in your custom CSS*/
-
 :root {
   --outline-dark-emojis: drop-shadow(0px 0px .5px white) drop-shadow(0px 0px 1px grey);
 }

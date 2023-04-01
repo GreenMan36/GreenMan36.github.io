@@ -17,7 +17,6 @@
 */
 
 @import url(https://greenman36.github.io/files/discord-mods/themes/snippets/fix-titlebar-dragarea.css);
-@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/april-fools.css); /* april fools ;): can be undone with `@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/undo-april-fools.css` in your custom CSS*/
 
 /* used for theme name and version, DO NOT TOUCH */
 :root {

@@ -2,7 +2,7 @@
  * @name Greens SquareCord
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 26.03.23a
+ * @version 01.04.23a
  * @description This theme makes the Discord client look squared AF.
 */
 
@@ -57,9 +57,7 @@
     display: none;
 }
 
-* {
-    border-radius: 0 !important;
-}
+* {border-radius: 0 !important}
 
 /* call controlls and more */
 :is(.wrapper-2PSQCG, .controlButton-2PMNom) svg foreignobject {
@@ -67,17 +65,10 @@
 }
 
 /* avatar view profile */
-.avatarHint-2g3Mcd {
-   overflow: visible;
-}
-.avatarWrapper-3y0KZ1 svg foreignObject:has(.avatarHintInner-3gk_Yx) {
-    mask: none;
-    transform: scale(1.1);
-}
+.avatarWrapper-3y0KZ1 svg foreignObject:has(.avatarHintInner-3gk_Yx) {mask: none} /* remove mask from hover */
+.avatarWrapper-3y0KZ1 .wrapper-3Un6-K svg foreignobject {transform: none}
 
 /* settings switch button */
-.slider-HJFN2i rect {
-   rx: 0;
-}
+.slider-HJFN2i rect {rx: 0}
 
 /* radio buttons will take more work and I won't because a box indicates a checkbox, not a radio button */

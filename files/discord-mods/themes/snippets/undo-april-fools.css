@@ -1,45 +1,45 @@
 /**
  * @name Undo's the April Fools changes
  * @author GreenMan36#0633
- * @version 01.04.23b
+ * @version 02.04.23a
  * @description They are just so annoying
 */
 
 /* Remove the subtle animation */
-:root {
+/* :root {
     animation-name: none !important;
-}
+} */
 
 /* Remove the zoom animation on hover */
-:root:hover {
+/* :root:hover {
     animation-name: none !important;
-}
+} */
 
 /* Reset the close button */
-.winButtonClose-3Q8ZH5 {
+/* .winButtonClose-3Q8ZH5 {
     pointer-events: auto !important;
     transform: none !important;
     opacity: 1 !important;
-}
+} */
 
 /* Remove the fake close character */
-.winButtonClose-3Q8ZH5:before {
+/* .winButtonClose-3Q8ZH5:before {
     content: "" !important;
     width: 0 !important;
-}
+} */
 
 /* Remove the clown emoji from usernames */
-.username-h_Y3Us:after {
+/* .username-h_Y3Us:after {
     opacity: 0 !important;
     content: "" !important;
-}
+} */
 
 /* Remove the "Playing April fools" text on hover */
-.activity-2EQDZv:hover:before {
+/* .activity-2EQDZv:hover:before {
     content: "" !important;
-}
+} */
 
 /* Restore opacity on activity text on hover */
-.activity-2EQDZv:hover .activityText-1rR-8O {
+/* .activity-2EQDZv:hover .activityText-1rR-8O {
     opacity: 1 !important;
-}
+} */

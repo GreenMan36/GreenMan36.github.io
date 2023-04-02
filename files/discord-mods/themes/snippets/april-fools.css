@@ -1,7 +1,7 @@
 /**
  * @name April Fools
  * @author GreenMan36#0633
- * @version 01.04.23b
+ * @version 02.04.23a
  * @description April Fools changes :D
 */
 
@@ -9,7 +9,7 @@
 /* sorry if you find this too annoying, but I wanted to do something for April Fools :D */
 
 /* Define keyframes for the subtle animation */
-@keyframes shiftAndRotate {
+/* @keyframes shiftAndRotate {
     from {
         transform: translate(0, 0) rotate(-0.02deg);
         filter: hue-rotate(5deg);
@@ -26,10 +26,10 @@
         transform: translate(0, 0) rotate(-0.02deg);
         filter: hue-rotate(5deg);
     }
-}
+} */
 
 /* Define keyframes for the animation */
-@keyframes zoom {
+/* @keyframes zoom {
     from  {transform: scale(1)}
     00.5% {transform: scale(1.0005)}
     01.0% {transform: scale(1)}
@@ -40,10 +40,10 @@
     99.5% {transform: scale(1.001)}
     99.9% {transform: scale(1)}
     
-}
+} */
 
 /* Apply the animation to all elements on the page */
-:root {
+/* :root {
     animation-name: shiftAndRotate;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -56,17 +56,17 @@
     animation-iteration-count: 1;
     filter: none;
     transform: none;
-}
+} */
 
 /* mess with the close button, breaking it */
-.winButtonClose-3Q8ZH5 {
+/* .winButtonClose-3Q8ZH5 {
     pointer-events: none;
     transform: translate(3px, -2px);
     opacity: 0.1;
-}
+} */
 
 /* create a fake close character from X */
-.winButtonClose-3Q8ZH5:before {
+/* .winButtonClose-3Q8ZH5:before {
     content: "‏‏‎ ‎x";
     width: 100%;
 }
@@ -82,4 +82,4 @@
 }
 .activity-2EQDZv:hover .activityText-1rR-8O {
     opacity: 0;
-}
+} */

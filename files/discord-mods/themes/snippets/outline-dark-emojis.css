@@ -23,6 +23,11 @@
   --outline-de-9: drop-shadow(0px 0px 3px white) drop-shadow(0px 0px 1.5px grey);
 }
 
+/* fixes glow cutoff at message edges, looks weird */
+.messageContent-2t3eCI:has(.emojiContainer-2XKwXX) {
+  overflow: visible;
+}
+
 button:is([data-name^=tm], [data-name^=copyright], [data-name^=registered]) div, 
 img[src="/assets/ef166777e2f79997d529055dc66f0ab7.svg"], button[data-name~=pen_ballpoint] div,
 img[src="/assets/2faf0368f5faf385b807cb7b8b36a7b8.svg"], button[data-name~=file_cabinet] div,

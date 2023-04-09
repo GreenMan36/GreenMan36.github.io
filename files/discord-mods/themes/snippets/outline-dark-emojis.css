@@ -1,15 +1,49 @@
 /**
  * @name Outline Dark Emojis
- * @author asportnoy#6969
+ * @author asportnoy#6969 && GreenMan36
  * @authorLink https://github.com/asportnoy
- * @version 12.02.23a
- * @description A small snippet that makes dark emojis have a outline for visibility. ALL credits to @asportnoy#6969. I, GreenMan36#0633 just made a small edit to the snippet.
+ * @version 09.04.23a
+ * @description A small snippet that makes dark emojis have a outline for visibility. ALL credits to @asportnoy#6969. I, GreenMan36#0633 made small edits and additions to the snippet.
 */
 
 :root {
   --outline-dark-emojis: drop-shadow(0px 0px .5px white) drop-shadow(0px 0px 1px grey);
 }
 
+button:is([data-name^=tm], [data-name^=copyright], [data-name^=registered]) div, 
+img[src="/assets/ef166777e2f79997d529055dc66f0ab7.svg"], button[data-name~=pen_ballpoint] div,
+img[src="/assets/2faf0368f5faf385b807cb7b8b36a7b8.svg"], button[data-name~=file_cabinet] div,
+img[src="/assets/ba3e449f17cf9e91e2f52a0dcb65b4cc.svg"], button[data-name~=notebook] div,  
+img[src="/assets/e6bbd7e1a762e2e20cee7ae28d29a6f3.svg"], button[data-name~=magic_wand] div,  
+img[src="/assets/0542c8e0343df05c3d32b8694aec066a.svg"], button[data-name~=hole] div,  
+img[src="/assets/ff8c49a85b7fbda0110c66353a9db71e.svg"], button[data-name~=watch] div,  
+img[src="/assets/3547c9b25b1b9a1da8c06100fc4da900.svg"], button[data-name~=mobile_phone] div,  
+img[src="/assets/14b8317fd0cf1f8d1e8a89de6c841c76.svg"], button[data-name~=calling] div,  
+img[src="/assets/48fa2b2a410d7be930d2c4708afaabcf.svg"], button[data-name~=wheel] div,  
+img[src="/assets/442dd1525062b91820d91cf99dd645e5.svg"], button[data-name~=bike] div,  
+img[src="/assets/5f99f7506e0a777509a134a0692b1396.svg"], button[data-name~=manual_wheelchair] div,  
+img[src="/assets/b5a892d37d598e0e73dce83212ad8512.svg"], button[data-name~=headphones] div,  
+img[src="/assets/1a681bfe61f09a5f527efb25cbbd1a37.svg"], button[data-name~=microphone] div,  
+img[src="/assets/376bdd3ac92afd53169e8faecf624110.svg"], button[data-name~=soccer] div,  
+img[src="/assets/0cfd4882c0646d504900c90166d80cf8.svg"], button[data-name~="8ball"] div,  /* outlier, this one breaks without being quoted */
+img[src="/assets/e8b3b5a31c0a3c541960bd3ddccc538f.svg"], button[data-name~=gorilla] div,  
+img[src="/assets/d5b1663a1a49a2471ab3bce9f98bfc27.svg"], button[data-name~=lady_beetle] div,  
+img[src="/assets/ba4d132b61d61e957465db5d29e61e7d.svg"], button[data-name~=fly] div,  
+img[src="/assets/4b68db498853957de56d6e5d7cb89ccf.svg"], button[data-name~=mosquito] div,  
+img[src="/assets/66421caf19743280c076da2fca8932a3.svg"], button[data-name~=bee] div,  
+img[src="/assets/39795e861142747cedd93bf1ead76c9d.svg"], button[data-name~=eyeglasses],
+img[src="/assets/a2bcfe4eee2242c2f9724d2cfdf6c45b.svg"], button[data-name~=kaaba] div,
+img[src="/assets/8e9a2d7ef44c1052a246e062e4c3f796.svg"], button[data-name~=checkered_flag] div,
+img[src="/assets/b839169ecf4b7b147129f96e369e055a.svg"], button[data-name~=man_dancing] div,  
+img[src="/assets/c74f1755041b1db171f32a6340a2f1ad.svg"], button[data-name~=people_with_bunny_ears_partying] div,  
+img[src="/assets/ca99e78cbd0b60e254f50543063803b4.svg"], button[data-name~=women_with_bunny_ears_partying] div,  
+img[src="/assets/f332ef3d172d77d4c641eb65a49bc4a8.svg"], button[data-name~=student] div,  
+img[src="/assets/822f669dcf1896f482b5191ad465d7bf.svg"], button[data-name~=man_student] div,  
+img[src="/assets/9046ad65adaa1e8a152e62e4790550ab.svg"], button[data-name~=woman_student] div,  
+img[src="/assets/09e7fe5dff0fb3c974363e259d09dca3.svg"], button[data-name~=guard] div,  
+img[src="/assets/f7b0146ff19142d68fbed5fef22dcd7e.svg"], button[data-name~=man_guard] div,  
+img[src="/assets/d05572fcb9e9ada684f4ef5446e0092f.svg"], button[data-name~=woman_guard] div, 
+img[src="/assets/b9cd193b23b2d0d0f878f992ef8a6b26.svg"], button[data-name~=pirate_flag] div, 
 img[src="/assets/9a43e631d506ae4818ecefc825dc02ad.svg"], button[data-name~=heavy_plus_sign] div, 
 img[src="/assets/13c8662cff8e029799a35878b56e23eb.svg"], button[data-name~=heavy_minus_sign] div, 
 img[src="/assets/e37bc714ecd911af7c558f5aaa0c4464.svg"], button[data-name~=ant] div, 
@@ -19,6 +53,7 @@ img[src="/assets/f34c63197816c3e60bea4a9537c5fffa.svg"], button[data-name~=telep
 img[src="/assets/05a1abc6388a96e2a536650433c12fca.svg"], button[data-name~=video_camera] div, 
 img[src="/assets/f1426431eb7c60fb8c072f90acb07ceb.svg"], button[data-name~=video_game] div, 
 img[src="/assets/733a0db94b390b2fd5da87408285a079.svg"], button[data-name~=movie_camera] div, 
+img[src="/assets/7f1f04d2c3986363c03750206bf7d9d7.svg"], button[data-name~=shallow_pan_of_food] div, 
 img[src="/assets/654212b1a4cdf391b4a8bb37faf7d18c.svg"], button[data-name~=projector] div, 
 img[src="/assets/16520d89e684777eedd536346015e71f.svg"], button[data-name~=electric_plug] div, 
 img[src="/assets/22bbea32f8826e963038329aee825bc1.svg"], button[data-name~=chess_pawn] div, 

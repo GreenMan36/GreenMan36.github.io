@@ -7,7 +7,20 @@
 */
 
 :root {
-  --outline-dark-emojis: drop-shadow(0px 0px .5px white) drop-shadow(0px 0px 1px grey);
+  --outline-dark-emojis: var(--outline-de-3); /* range is 0-9, or set a custom css filter.*/
+}
+
+:root {
+  --outline-de-0: drop-shadow(0px 0px .5px white) drop-shadow(0px 0px 1px grey);
+  --outline-de-1: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px .5px grey);
+  --outline-de-2: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px grey);
+  --outline-de-3: drop-shadow(0px 0px 1.5px white) drop-shadow(0px 0px .5px grey);
+  --outline-de-4: drop-shadow(0px 0px 1.5px white) drop-shadow(0px 0px 1.5px grey);
+  --outline-de-5: drop-shadow(0px 0px 2px white) drop-shadow(0px 0px 1px grey);
+  --outline-de-6: drop-shadow(0px 0px 2px white) drop-shadow(0px 0px 1.5px grey);
+  --outline-de-7: drop-shadow(0px 0px 2.5px white) drop-shadow(0px 0px 1.5px grey);
+  --outline-de-8: drop-shadow(0px 0px 2.5px white) drop-shadow(0px 0px 2px grey);
+  --outline-de-9: drop-shadow(0px 0px 3px white) drop-shadow(0px 0px 1.5px grey);
 }
 
 button:is([data-name^=tm], [data-name^=copyright], [data-name^=registered]) div, 

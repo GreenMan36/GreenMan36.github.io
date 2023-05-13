@@ -14,13 +14,27 @@
 
 :root {
   --new-image-border-radius: 8px;
-  --new-image-border-width: calc( 0px + var(--new-image-border-radius) / 2);
-  --new-image-max-height: calc(350px - var(--new-image-border-width) * 2); /* should be below 350 */
+  --new-image-border-width: calc(0px + var(--new-image-border-radius) / 2);
+  --new-image-max-height: calc(
+    350px - var(--new-image-border-width) * 2
+  ); /* should be below 350 */
 }
 
 /* style all individual image containers */
-:is(.oneByOneGridMosaic-2fYTx0, .twoByTwoGrid-35pISX, .oneByTwoGrid-25mx0i, .threeByThreeGrid-2CT4mS) .lazyImg-ewiNCh,
-:is(.oneByOneGridMosaic-2fYTx0, .twoByTwoGrid-35pISX, .oneByTwoGrid-25mx0i, .threeByThreeGrid-2CT4mS) .lazyImgContainer-3k3gRy {
+:is(
+    .oneByOneGridMosaic-2fYTx0,
+    .twoByTwoGrid-35pISX,
+    .oneByTwoGrid-25mx0i,
+    .threeByThreeGrid-2CT4mS
+  )
+  .lazyImg-ewiNCh,
+:is(
+    .oneByOneGridMosaic-2fYTx0,
+    .twoByTwoGrid-35pISX,
+    .oneByTwoGrid-25mx0i,
+    .threeByThreeGrid-2CT4mS
+  )
+  .lazyImgContainer-3k3gRy {
   aspect-ratio: unset;
   border-radius: 8px;
   /* without this, small images are impossible to remove */
@@ -55,7 +69,12 @@
 }
 
 /* grids don't resize properly so unset lets them take their space */
-:is(.oneByOneGridMosaic-2fYTx0, .twoByTwoGrid-35pISX, .oneByTwoGrid-25mx0i, .threeByThreeGrid-2CT4mS) {
+:is(
+    .oneByOneGridMosaic-2fYTx0,
+    .twoByTwoGrid-35pISX,
+    .oneByTwoGrid-25mx0i,
+    .threeByThreeGrid-2CT4mS
+  ) {
   max-height: unset;
 }
 

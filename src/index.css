@@ -3,8 +3,21 @@ If in darkmode, load darkmode.css
 Else load lightmode.css
 */
 
-body, div, h1, h2, h3, h4, h5, h6, p, li, ul, label, a, textarea {
-  transition: background-color .3s ease-in-out;
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul,
+label,
+a,
+textarea {
+  transition: background-color 0.3s ease-in-out;
   transition-property: background-color, color, border-color;
 }
 
@@ -27,10 +40,29 @@ body, div, h1, h2, h3, h4, h5, h6, p, li, ul, label, a, textarea {
 }
 
 .snowmode {
-  --greenlight: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
-  --background-color: linear-gradient(0deg, #ffffff 8px, hsl(0, 0%, 5%) 32px, hsl(240, 10%, 8%) 100%);
+  --greenlight: linear-gradient(
+    90deg,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #9400d3
+  );
+  --background-color: linear-gradient(
+    0deg,
+    #ffffff 8px,
+    hsl(0, 0%, 5%) 32px,
+    hsl(240, 10%, 8%) 100%
+  );
   /* make the bottom 16px be snow white */
-  --card-color: linear-gradient(0deg, #ffffff 4px, rgb(28, 28, 28) 16px, rgb(28, 28, 34) 100%);
+  --card-color: linear-gradient(
+    0deg,
+    #ffffff 4px,
+    rgb(28, 28, 28) 16px,
+    rgb(28, 28, 34) 100%
+  );
   --header-color: #ffffff;
   --text-color: hsla(0, 0%, 100%, 60%);
   color-scheme: dark;
@@ -39,16 +71,18 @@ body, div, h1, h2, h3, h4, h5, h6, p, li, ul, label, a, textarea {
 .summermode {
   --greenlight: hsl(120, 100%, 50%);
   /* nice beach, sea, sky and a bit of sun */
-  --background-color: linear-gradient(0deg, 
-  hsl(60, 50%, 80%) 30px,
-  hsl(60, 100%, 90%) 40px,
-  hsl(200, 0%, 100%) 48px,
-  hsl(200, 100%, 75%) 52px,
-  hsl(220, 100%, 60%) 75px,
-  hsl(220, 100%, 60%) 170px,
-  hsl(200, 70%, 60%) 172px,
-  hsl(200, 100%, 80%) 80%,
-  hsl(200, 80%, 85%));
+  --background-color: linear-gradient(
+    0deg,
+    hsl(60, 50%, 80%) 30px,
+    hsl(60, 100%, 90%) 40px,
+    hsl(200, 0%, 100%) 48px,
+    hsl(200, 100%, 75%) 52px,
+    hsl(220, 100%, 60%) 75px,
+    hsl(220, 100%, 60%) 170px,
+    hsl(200, 70%, 60%) 172px,
+    hsl(200, 100%, 80%) 80%,
+    hsl(200, 80%, 85%)
+  );
   --card-color: hsl(60, 100%, 90%);
   --header-color: hsl(0, 0%, 20%);
   --text-color: hsl(0, 0%, 20%);
@@ -58,15 +92,17 @@ body, div, h1, h2, h3, h4, h5, h6, p, li, ul, label, a, textarea {
 .summerdarkmode {
   --greenlight: hsl(120, 100%, 50%);
   /* nice beach, sea, sky and nice and dark */
-  --background-color: linear-gradient(0deg, 
-  hwb(60 60% 20%) 30px,
-  hwb(60 60% 25%) 40px,
-  hwb(60 60% 35%) 48px,
-  hwb(200 20% 40%) 52px,
-  hwb(220 0% 40%) 75px,
-  hwb(220 0% 40%) 170px,
-  hwb(200 4% 80%) 172px,
-  hwb(210 7% 80%) 80%);
+  --background-color: linear-gradient(
+    0deg,
+    hwb(60 60% 20%) 30px,
+    hwb(60 60% 25%) 40px,
+    hwb(60 60% 35%) 48px,
+    hwb(200 20% 40%) 52px,
+    hwb(220 0% 40%) 75px,
+    hwb(220 0% 40%) 170px,
+    hwb(200 4% 80%) 172px,
+    hwb(210 7% 80%) 80%
+  );
   --card-color: hwb(60 10% 87%);
   --header-color: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 95%);
@@ -76,18 +112,20 @@ body, div, h1, h2, h3, h4, h5, h6, p, li, ul, label, a, textarea {
 .autumnmode {
   --greenlight: hsl(120, 100%, 50%);
   /* leaves on the ground, trees, sky and a bit of sun */
-  --background-color: linear-gradient(0deg,
-  hsl(19, 50%, 27%) 10px,
-  hsl(113, 50%, 24%) 20px,
-  hsl(66, 72%, 49%) 24px,
-  hsl(0, 80%, 29%) 28px,
-  hsl(2, 34%, 47%) 32px,
-  hsl(113, 50%, 24%) 36px,
-  hsl(19, 50%, 27%) 40px,
-  hsl(19, 50%, 27%) 44px,
-  hsl(220, 100%, 60%) 46px,
-  hsl(200, 70%, 60%) 40%,
-  hsl(200, 80%, 85%));
+  --background-color: linear-gradient(
+    0deg,
+    hsl(19, 50%, 27%) 10px,
+    hsl(113, 50%, 24%) 20px,
+    hsl(66, 72%, 49%) 24px,
+    hsl(0, 80%, 29%) 28px,
+    hsl(2, 34%, 47%) 32px,
+    hsl(113, 50%, 24%) 36px,
+    hsl(19, 50%, 27%) 40px,
+    hsl(19, 50%, 27%) 44px,
+    hsl(220, 100%, 60%) 46px,
+    hsl(200, 70%, 60%) 40%,
+    hsl(200, 80%, 85%)
+  );
   --card-color: hsl(31, 32%, 90%);
   --header-color: hsl(0, 0%, 20%);
   --text-color: hsl(0, 0%, 20%);
@@ -111,7 +149,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, li, ul, label, a, textarea {
 }
 
 #themeswitcher > label {
-  padding: 1em .5em;
+  padding: 1em 0.5em;
 }
 
 .hidden {
@@ -167,12 +205,19 @@ div.flex > div {
   flex: 1 1 400px;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--header-color);
 }
 
-p, li, ul, label {
+p,
+li,
+ul,
+label {
   color: var(--text-color);
 }
 

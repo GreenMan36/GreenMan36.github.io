@@ -8,29 +8,29 @@
 
 /* make the notice bar floating */
 .notice-2HEN-u {
-    z-index: 1003;
-    display: flex;
-    padding: 4px 24px;
-    position: absolute;
-    border-radius: 10px;
-    transform: translateX(calc(50vw - 50%)) translateY(64px);
-    max-width: calc(100vw - 256px);
+  z-index: 1003;
+  display: flex;
+  padding: 4px 24px;
+  position: absolute;
+  border-radius: 10px;
+  transform: translateX(calc(50vw - 50%)) translateY(64px);
+  max-width: calc(100vw - 256px);
 }
 
 /* force everything to work nicely with the flexbox */
 .notice-2HEN-u * {
-    position: relative;
-    height: unset;
-    inset: 0;
+  position: relative;
+  height: unset;
+  inset: 0;
 }
 
 /* fixes the nitro icon */
 .notice-2HEN-u .premiumIcon-2HhTvp {
-    min-width: 24px;
+  min-width: 24px;
 }
 
 /* viewing as role notice, back button */
 /* I think its one of the only buttons that's on the left */
 .notice-2HEN-u .button-29sJG8.backButton-3I5R-E {
-    margin: 0 16px 0 0;
+  margin: 0 16px 0 0;
 }

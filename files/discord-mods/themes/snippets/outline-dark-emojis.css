@@ -7,18 +7,23 @@
 */
 
 :root {
-  --outline-dark-emojis: var(--outline-de-3); /* range is 0-9, or set a custom css filter.*/
+  --outline-dark-emojis: var(
+    --outline-de-3
+  ); /* range is 0-9, or set a custom css filter.*/
 }
 
 :root {
-  --outline-de-0: drop-shadow(0px 0px .5px white) drop-shadow(0px 0px 1px grey);
-  --outline-de-1: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px .5px grey);
+  --outline-de-0: drop-shadow(0px 0px 0.5px white) drop-shadow(0px 0px 1px grey);
+  --outline-de-1: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 0.5px grey);
   --outline-de-2: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px grey);
-  --outline-de-3: drop-shadow(0px 0px 1.5px white) drop-shadow(0px 0px .5px grey);
-  --outline-de-4: drop-shadow(0px 0px 1.5px white) drop-shadow(0px 0px 1.5px grey);
+  --outline-de-3: drop-shadow(0px 0px 1.5px white)
+    drop-shadow(0px 0px 0.5px grey);
+  --outline-de-4: drop-shadow(0px 0px 1.5px white)
+    drop-shadow(0px 0px 1.5px grey);
   --outline-de-5: drop-shadow(0px 0px 2px white) drop-shadow(0px 0px 1px grey);
   --outline-de-6: drop-shadow(0px 0px 2px white) drop-shadow(0px 0px 1.5px grey);
-  --outline-de-7: drop-shadow(0px 0px 2.5px white) drop-shadow(0px 0px 1.5px grey);
+  --outline-de-7: drop-shadow(0px 0px 2.5px white)
+    drop-shadow(0px 0px 1.5px grey);
   --outline-de-8: drop-shadow(0px 0px 2.5px white) drop-shadow(0px 0px 2px grey);
   --outline-de-9: drop-shadow(0px 0px 3px white) drop-shadow(0px 0px 1.5px grey);
 }
@@ -121,7 +126,6 @@ img[src="/assets/0c57febf44dbbb019c6fd75b05837495.svg"], button[data-name~=camer
 img[src="/assets/cbf0c56a2f3c861877b0de6f7fe8c24f.svg"], button[data-name~=pager] div, 
 img[src="/assets/3a36caf1fd1fce61581d2250b8459314.svg"], button[data-name~=tv] div, 
 img[src="/assets/a9e13a28157a6568d203df8fcf754230.svg"], button[data-name~=radio] div, 
-img[src="/assets/41e47bdc538a48f4ecdde53dc73e4e9b.svg"], button[data-name~=black_square_button] div 
-{
+img[src="/assets/41e47bdc538a48f4ecdde53dc73e4e9b.svg"], button[data-name~=black_square_button] div {
   filter: var(--outline-dark-emojis);
 }

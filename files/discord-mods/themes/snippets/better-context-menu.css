@@ -6,7 +6,7 @@
 */
 
 :root {
-    --hide-context-menu-invite-to-server: none; /* Discord default: flex */
+  --hide-context-menu-invite-to-server: none; /* Discord default: flex */
 }
 
 #user-context-user-profile,
@@ -17,139 +17,181 @@
 #user-context-add-friend-nickname,
 #user-context-edit-friend-nickname,
 #user-context-close-dm {
-    order: -1;
-    width: 36px;
-    height: 36px;
-    font-size: 0;
-    display: inline-flex;
-    position: relative;
-    margin-right: var(--menu-container-padding);
-    padding: 0;
-    --color: var(--interactive-normal);
-    --size: 24px;
+  order: -1;
+  width: 36px;
+  height: 36px;
+  font-size: 0;
+  display: inline-flex;
+  position: relative;
+  margin-right: var(--menu-container-padding);
+  padding: 0;
+  --color: var(--interactive-normal);
+  --size: 24px;
 }
 
-:is(#user-context-user-profile,
-#user-context-mention,
-#user-context-message-user,
-#user-context-call,
-#user-context-note,
-#user-context-add-friend-nickname,
-#user-context-edit-friend-nickname,
-#user-context-close-dm):before {
-    content: "";
-    background-color: var(--color);
-    width: 100%;
-    height: 100%;
-    -webkit-mask-size: var(--size);
-    mask-size: var(--size);
-    -webkit-mask-image: var(--icon);
-    mask-image: var(--icon);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    mask-position: center;
-    position: absolute;
+:is(
+    #user-context-user-profile,
+    #user-context-mention,
+    #user-context-message-user,
+    #user-context-call,
+    #user-context-note,
+    #user-context-add-friend-nickname,
+    #user-context-edit-friend-nickname,
+    #user-context-close-dm
+  ):before {
+  content: "";
+  background-color: var(--color);
+  width: 100%;
+  height: 100%;
+  -webkit-mask-size: var(--size);
+  mask-size: var(--size);
+  -webkit-mask-image: var(--icon);
+  mask-image: var(--icon);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  position: absolute;
 }
 
-:root{
-    --icon-view-profile: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 22C12.4883 22 12.9684 21.965 13.438 21.8974C12.5414 20.8489 12 19.4877 12 18C12 17.6593 12.0284 17.3252 12.083 17H6V16.0244C6 14.0732 10 13 12 13C12.6215 13 13.436 13.1036 14.2637 13.305C15.2888 12.4882 16.5874 12 18 12C19.4877 12 20.8489 12.5414 21.8974 13.438C21.965 12.9684 22 12.4883 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 12C13.66 12 15 10.66 15 9C15 7.34 13.66 6 12 6C10.34 6 9 7.34 9 9C9 10.66 10.34 12 12 12Z' /%3E%3Cpath d='M18 22C20.2091 22 22 20.2091 22 18C22 15.7909 20.2091 14 18 14C15.7909 14 14 15.7909 14 18C14 20.2091 15.7909 22 18 22Z' /%3E%3C/svg%3E");
-    --icon-call: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 5V3C16.515 3 21 7.486 21 13H19C19 8.589 15.411 5 11 5ZM17 13H15C15 10.795 13.206 9 11 9V7C14.309 7 17 9.691 17 13ZM11 11V13H13C13 11.896 12.105 11 11 11ZM14 16H18C18.553 16 19 16.447 19 17V21C19 21.553 18.553 22 18 22H13C6.925 22 2 17.075 2 11V6C2 5.447 2.448 5 3 5H7C7.553 5 8 5.447 8 6V10C8 10.553 7.553 11 7 11H6C6.063 14.938 9 18 13 18V17C13 16.447 13.447 16 14 16Z'  /%3E%3C/svg%3E");
-    --icon-mention: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 2C6.486 2 2 6.486 2 12C2 17.515 6.486 22 12 22C14.039 22 15.993 21.398 17.652 20.259L16.521 18.611C15.195 19.519 13.633 20 12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12V12.782C20 14.17 19.402 15 18.4 15L18.398 15.018C18.338 15.005 18.273 15 18.209 15H18C17.437 15 16.6 14.182 16.6 13.631V12C16.6 9.464 14.537 7.4 12 7.4C9.463 7.4 7.4 9.463 7.4 12C7.4 14.537 9.463 16.6 12 16.6C13.234 16.6 14.35 16.106 15.177 15.313C15.826 16.269 16.93 17 18 17L18.002 16.981C18.064 16.994 18.129 17 18.195 17H18.4C20.552 17 22 15.306 22 12.782V12C22 6.486 17.514 2 12 2ZM12 14.599C10.566 14.599 9.4 13.433 9.4 11.999C9.4 10.565 10.566 9.399 12 9.399C13.434 9.399 14.6 10.565 14.6 11.999C14.6 13.433 13.434 14.599 12 14.599Z' /%3E%3C/svg%3E");
-    --icon-message: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.79805 3C3.80445 3 2.99805 3.8055 2.99805 4.8V15.6C2.99805 16.5936 3.80445 17.4 4.79805 17.4H7.49805V21L11.098 17.4H19.198C20.1925 17.4 20.998 16.5936 20.998 15.6V4.8C20.998 3.8055 20.1925 3 19.198 3H4.79805Z' /%3E%3C/svg%3E");
-    --icon-add-nickOut: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 22.1.0  SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_3' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='enable-background:new 0 0 24 24%3B' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M19.1 5.4c-0.3-0.1-0.5-0.1-0.8-0.2l0-0.2c0-1.1-0.9-1.9-1.9-1.9L11.6 3C10.8 3 10 3.4 9.4 3.9l-8.3 8.2c-0.7 0.7-0.7 1.9 0 2.7l5.5 5.5c0.7 0.7 1.9 0.7 2.6 0l8.4-8.3c0.3-0.3 0.5-0.7 0.7-1.1c2.5 0.5 4.7 0 5-1.4C23.8 8.1 21.9 6.2 19.1 5.4z M18.4 9.6L18.4 9.6c-0.2 0-0.3-0.1-0.5-0.1c-0.1 0-0.1 0-0.2 0c-0.8-0.2-1.6-0.6-2.3-0.9c-0.1-0.1-0.2-0.1-0.3-0.2c-0.2 0.2-0.6 0.3-0.9 0.3c-0.8 0-1.5-0.7-1.5-1.5s0.7-1.5 1.5-1.5c0.8 0 1.5 0.7 1.5 1.5c0 0.1 0 0.2 0 0.2c0.6 0.2 1.3 0.4 2.1 0.7c0.2 0.1 0.4 0.1 0.5 0.1l0-1.5c2.2 0.6 3.7 1.7 3.5 2.5C21.7 9.9 20.2 10 18.4 9.6z'/%3E%3Cpolygon points='19.5 13.7 17.9 13.7 17.9 16.5 15.1 16.5 15.1 18.1 17.9 18.1 17.9 21 19.5 21 19.5 18.1 22.3 18.1 22.3 16.5 19.5 16.5 '/%3E%3C/g%3E%3C/svg%3E");
-    --icon-add-nickIn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M19.1,5.4c-0.3-0.1-0.5-0.1-0.8-0.2l0-0.2c0-1.1-0.9-1.9-1.9-1.9L11.6,3C10.8,3,10,3.4,9.4,3.9l-8.3,8.2c-0.7,0.7-0.7,1.9,0,2.7l5.5,5.5c0.7,0.7,1.9,0.7,2.6,0l8.4-8.3c0.3-0.3,0.5-0.7,0.7-1.1c2.5,0.5,4.7,0,5-1.4C23.8,8.1,21.9,6.2,19.1,5.4z M12,14.1H9.2v2.8H7.6v-2.8H4.7v-1.6h2.8V9.6h1.6v2.8H12V14.1z M18.4,9.6L18.4,9.6c-0.2,0-0.3-0.1-0.5-0.1c-0.1,0-0.1,0-0.2,0c-0.8-0.2-1.6-0.6-2.3-0.9c-0.1-0.1-0.2-0.1-0.3-0.2c-0.2,0.2-0.6,0.3-0.9,0.3c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5c0.8,0,1.5,0.7,1.5,1.5c0,0.1,0,0.2,0,0.2c0.6,0.2,1.3,0.4,2.1,0.7c0.2,0.1,0.4,0.1,0.5,0.1l0-1.5c2.2,0.6,3.7,1.7,3.5,2.5C21.7,9.9,20.2,10,18.4,9.6z' /%3E%3C/svg%3E");
-    --icon-edit-nickIn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M19.1,5.4c-0.3-0.1-0.5-0.1-0.8-0.2l0-0.2c0-1.1-0.9-1.9-1.9-1.9L11.6,3C10.8,3,10,3.4,9.4,3.9l-8.3,8.2c-0.7,0.7-0.7,1.9,0,2.7l5.5,5.5c0.7,0.7,1.9,0.7,2.6,0l8.4-8.3c0.3-0.3,0.5-0.7,0.7-1.1c2.5,0.5,4.7,0,5-1.4C23.8,8.1,21.9,6.2,19.1,5.4z M4.1,15.1l-2.3-1.7l2.3-1.7V15.1z M10.5,15.1H5v-3.3h5.5V15.1z M12.9,14.6c-0.4,0.4-1,0.4-1.5,0.4v-3.3c0.5,0,1.1,0,1.5,0.4C13.5,12.9,13.5,14,12.9,14.6z M18.4,9.6L18.4,9.6c-0.2,0-0.3-0.1-0.5-0.1c-0.1,0-0.1,0-0.2,0c-0.8-0.2-1.6-0.6-2.3-0.9c-0.1-0.1-0.2-0.1-0.3-0.2c-0.2,0.2-0.6,0.3-0.9,0.3c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5c0.8,0,1.5,0.7,1.5,1.5c0,0.1,0,0.2,0,0.2c0.6,0.2,1.3,0.4,2.1,0.7c0.2,0.1,0.4,0.1,0.5,0.1l0-1.5c2.2,0.6,3.7,1.7,3.5,2.5C21.7,9.9,20.2,10,18.4,9.6z' /%3E%3C/svg%3E");
-    --icon-edit-nickOut: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 22.1.0  SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_3' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='enable-background:new 0 0 24 24%3B' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M19.1 5.4c-0.3-0.1-0.5-0.1-0.8-0.2l0-0.2c0-1.1-0.9-1.9-1.9-1.9L11.6 3C10.8 3 10 3.4 9.4 3.9l-8.3 8.2c-0.7 0.7-0.7 1.9 0 2.7l5.5 5.5c0.7 0.7 1.9 0.7 2.6 0l8.4-8.3c0.3-0.3 0.5-0.7 0.7-1.1c2.5 0.5 4.7 0 5-1.4C23.8 8.1 21.9 6.2 19.1 5.4z M18.4 9.6L18.4 9.6c-0.2 0-0.3-0.1-0.5-0.1c-0.1 0-0.1 0-0.2 0c-0.8-0.2-1.6-0.6-2.3-0.9c-0.1-0.1-0.2-0.1-0.3-0.2c-0.2 0.2-0.6 0.3-0.9 0.3c-0.8 0-1.5-0.7-1.5-1.5s0.7-1.5 1.5-1.5c0.8 0 1.5 0.7 1.5 1.5c0 0.1 0 0.2 0 0.2c0.6 0.2 1.3 0.4 2.1 0.7c0.2 0.1 0.4 0.1 0.5 0.1l0-1.5c2.2 0.6 3.7 1.7 3.5 2.5C21.7 9.9 20.2 10 18.4 9.6z'/%3E%3Crect x='15.1' y='15.1' transform='matrix(0.7071 -0.7071 0.7071 0.7071 -6.6265 17.5187)' width='5.5' height='3.3'/%3E%3Cpolygon points='13.7 21 16.5 20.5 14.1 18.1 '/%3E%3Cpath d='M20.6 12.2c-0.6 0-1 0.4-1.4 0.8l2.4 2.4c0.4-0.4 0.8-0.8 0.8-1.4C22.3 13 21.6 12.2 20.6 12.2z'/%3E%3C/g%3E%3C/svg%3E");
-    --icon-close-dm: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z' /%3E%3C/svg%3E");
-    --icon-list: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z'/%3E%3C/svg%3E");
+:root {
+  --icon-view-profile: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 22C12.4883 22 12.9684 21.965 13.438 21.8974C12.5414 20.8489 12 19.4877 12 18C12 17.6593 12.0284 17.3252 12.083 17H6V16.0244C6 14.0732 10 13 12 13C12.6215 13 13.436 13.1036 14.2637 13.305C15.2888 12.4882 16.5874 12 18 12C19.4877 12 20.8489 12.5414 21.8974 13.438C21.965 12.9684 22 12.4883 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 12C13.66 12 15 10.66 15 9C15 7.34 13.66 6 12 6C10.34 6 9 7.34 9 9C9 10.66 10.34 12 12 12Z' /%3E%3Cpath d='M18 22C20.2091 22 22 20.2091 22 18C22 15.7909 20.2091 14 18 14C15.7909 14 14 15.7909 14 18C14 20.2091 15.7909 22 18 22Z' /%3E%3C/svg%3E");
+  --icon-call: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 5V3C16.515 3 21 7.486 21 13H19C19 8.589 15.411 5 11 5ZM17 13H15C15 10.795 13.206 9 11 9V7C14.309 7 17 9.691 17 13ZM11 11V13H13C13 11.896 12.105 11 11 11ZM14 16H18C18.553 16 19 16.447 19 17V21C19 21.553 18.553 22 18 22H13C6.925 22 2 17.075 2 11V6C2 5.447 2.448 5 3 5H7C7.553 5 8 5.447 8 6V10C8 10.553 7.553 11 7 11H6C6.063 14.938 9 18 13 18V17C13 16.447 13.447 16 14 16Z'  /%3E%3C/svg%3E");
+  --icon-mention: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 2C6.486 2 2 6.486 2 12C2 17.515 6.486 22 12 22C14.039 22 15.993 21.398 17.652 20.259L16.521 18.611C15.195 19.519 13.633 20 12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12V12.782C20 14.17 19.402 15 18.4 15L18.398 15.018C18.338 15.005 18.273 15 18.209 15H18C17.437 15 16.6 14.182 16.6 13.631V12C16.6 9.464 14.537 7.4 12 7.4C9.463 7.4 7.4 9.463 7.4 12C7.4 14.537 9.463 16.6 12 16.6C13.234 16.6 14.35 16.106 15.177 15.313C15.826 16.269 16.93 17 18 17L18.002 16.981C18.064 16.994 18.129 17 18.195 17H18.4C20.552 17 22 15.306 22 12.782V12C22 6.486 17.514 2 12 2ZM12 14.599C10.566 14.599 9.4 13.433 9.4 11.999C9.4 10.565 10.566 9.399 12 9.399C13.434 9.399 14.6 10.565 14.6 11.999C14.6 13.433 13.434 14.599 12 14.599Z' /%3E%3C/svg%3E");
+  --icon-message: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.79805 3C3.80445 3 2.99805 3.8055 2.99805 4.8V15.6C2.99805 16.5936 3.80445 17.4 4.79805 17.4H7.49805V21L11.098 17.4H19.198C20.1925 17.4 20.998 16.5936 20.998 15.6V4.8C20.998 3.8055 20.1925 3 19.198 3H4.79805Z' /%3E%3C/svg%3E");
+  --icon-add-nickOut: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 22.1.0  SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_3' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='enable-background:new 0 0 24 24%3B' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M19.1 5.4c-0.3-0.1-0.5-0.1-0.8-0.2l0-0.2c0-1.1-0.9-1.9-1.9-1.9L11.6 3C10.8 3 10 3.4 9.4 3.9l-8.3 8.2c-0.7 0.7-0.7 1.9 0 2.7l5.5 5.5c0.7 0.7 1.9 0.7 2.6 0l8.4-8.3c0.3-0.3 0.5-0.7 0.7-1.1c2.5 0.5 4.7 0 5-1.4C23.8 8.1 21.9 6.2 19.1 5.4z M18.4 9.6L18.4 9.6c-0.2 0-0.3-0.1-0.5-0.1c-0.1 0-0.1 0-0.2 0c-0.8-0.2-1.6-0.6-2.3-0.9c-0.1-0.1-0.2-0.1-0.3-0.2c-0.2 0.2-0.6 0.3-0.9 0.3c-0.8 0-1.5-0.7-1.5-1.5s0.7-1.5 1.5-1.5c0.8 0 1.5 0.7 1.5 1.5c0 0.1 0 0.2 0 0.2c0.6 0.2 1.3 0.4 2.1 0.7c0.2 0.1 0.4 0.1 0.5 0.1l0-1.5c2.2 0.6 3.7 1.7 3.5 2.5C21.7 9.9 20.2 10 18.4 9.6z'/%3E%3Cpolygon points='19.5 13.7 17.9 13.7 17.9 16.5 15.1 16.5 15.1 18.1 17.9 18.1 17.9 21 19.5 21 19.5 18.1 22.3 18.1 22.3 16.5 19.5 16.5 '/%3E%3C/g%3E%3C/svg%3E");
+  --icon-add-nickIn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M19.1,5.4c-0.3-0.1-0.5-0.1-0.8-0.2l0-0.2c0-1.1-0.9-1.9-1.9-1.9L11.6,3C10.8,3,10,3.4,9.4,3.9l-8.3,8.2c-0.7,0.7-0.7,1.9,0,2.7l5.5,5.5c0.7,0.7,1.9,0.7,2.6,0l8.4-8.3c0.3-0.3,0.5-0.7,0.7-1.1c2.5,0.5,4.7,0,5-1.4C23.8,8.1,21.9,6.2,19.1,5.4z M12,14.1H9.2v2.8H7.6v-2.8H4.7v-1.6h2.8V9.6h1.6v2.8H12V14.1z M18.4,9.6L18.4,9.6c-0.2,0-0.3-0.1-0.5-0.1c-0.1,0-0.1,0-0.2,0c-0.8-0.2-1.6-0.6-2.3-0.9c-0.1-0.1-0.2-0.1-0.3-0.2c-0.2,0.2-0.6,0.3-0.9,0.3c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5c0.8,0,1.5,0.7,1.5,1.5c0,0.1,0,0.2,0,0.2c0.6,0.2,1.3,0.4,2.1,0.7c0.2,0.1,0.4,0.1,0.5,0.1l0-1.5c2.2,0.6,3.7,1.7,3.5,2.5C21.7,9.9,20.2,10,18.4,9.6z' /%3E%3C/svg%3E");
+  --icon-edit-nickIn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M19.1,5.4c-0.3-0.1-0.5-0.1-0.8-0.2l0-0.2c0-1.1-0.9-1.9-1.9-1.9L11.6,3C10.8,3,10,3.4,9.4,3.9l-8.3,8.2c-0.7,0.7-0.7,1.9,0,2.7l5.5,5.5c0.7,0.7,1.9,0.7,2.6,0l8.4-8.3c0.3-0.3,0.5-0.7,0.7-1.1c2.5,0.5,4.7,0,5-1.4C23.8,8.1,21.9,6.2,19.1,5.4z M4.1,15.1l-2.3-1.7l2.3-1.7V15.1z M10.5,15.1H5v-3.3h5.5V15.1z M12.9,14.6c-0.4,0.4-1,0.4-1.5,0.4v-3.3c0.5,0,1.1,0,1.5,0.4C13.5,12.9,13.5,14,12.9,14.6z M18.4,9.6L18.4,9.6c-0.2,0-0.3-0.1-0.5-0.1c-0.1,0-0.1,0-0.2,0c-0.8-0.2-1.6-0.6-2.3-0.9c-0.1-0.1-0.2-0.1-0.3-0.2c-0.2,0.2-0.6,0.3-0.9,0.3c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5c0.8,0,1.5,0.7,1.5,1.5c0,0.1,0,0.2,0,0.2c0.6,0.2,1.3,0.4,2.1,0.7c0.2,0.1,0.4,0.1,0.5,0.1l0-1.5c2.2,0.6,3.7,1.7,3.5,2.5C21.7,9.9,20.2,10,18.4,9.6z' /%3E%3C/svg%3E");
+  --icon-edit-nickOut: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 22.1.0  SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_3' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='enable-background:new 0 0 24 24%3B' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M19.1 5.4c-0.3-0.1-0.5-0.1-0.8-0.2l0-0.2c0-1.1-0.9-1.9-1.9-1.9L11.6 3C10.8 3 10 3.4 9.4 3.9l-8.3 8.2c-0.7 0.7-0.7 1.9 0 2.7l5.5 5.5c0.7 0.7 1.9 0.7 2.6 0l8.4-8.3c0.3-0.3 0.5-0.7 0.7-1.1c2.5 0.5 4.7 0 5-1.4C23.8 8.1 21.9 6.2 19.1 5.4z M18.4 9.6L18.4 9.6c-0.2 0-0.3-0.1-0.5-0.1c-0.1 0-0.1 0-0.2 0c-0.8-0.2-1.6-0.6-2.3-0.9c-0.1-0.1-0.2-0.1-0.3-0.2c-0.2 0.2-0.6 0.3-0.9 0.3c-0.8 0-1.5-0.7-1.5-1.5s0.7-1.5 1.5-1.5c0.8 0 1.5 0.7 1.5 1.5c0 0.1 0 0.2 0 0.2c0.6 0.2 1.3 0.4 2.1 0.7c0.2 0.1 0.4 0.1 0.5 0.1l0-1.5c2.2 0.6 3.7 1.7 3.5 2.5C21.7 9.9 20.2 10 18.4 9.6z'/%3E%3Crect x='15.1' y='15.1' transform='matrix(0.7071 -0.7071 0.7071 0.7071 -6.6265 17.5187)' width='5.5' height='3.3'/%3E%3Cpolygon points='13.7 21 16.5 20.5 14.1 18.1 '/%3E%3Cpath d='M20.6 12.2c-0.6 0-1 0.4-1.4 0.8l2.4 2.4c0.4-0.4 0.8-0.8 0.8-1.4C22.3 13 21.6 12.2 20.6 12.2z'/%3E%3C/g%3E%3C/svg%3E");
+  --icon-close-dm: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z' /%3E%3C/svg%3E");
+  --icon-list: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z'/%3E%3C/svg%3E");
 }
 
-#user-context-user-profile{--icon: var(--icon-view-profile)}
-#user-context-mention{--icon: var(--icon-mention)}
-#user-context-message-user{--icon: var(--icon-message)}
-#user-context-call{--icon: var(--icon-call)}
-#user-context-note{--icon: var(--icon-list)}
-#user-context-add-friend-nickname{--icon: var(--icon-add-nickOut)}
-#user-context-edit-friend-nickname {--icon: var(--icon-edit-nickOut)}
-#user-context-close-dm {--icon: var(--icon-close-dm)}
-
-:is(#user-context-user-profile,
-#user-context-mention,
-#user-context-message-user,
-#user-context-call,
-#user-context-note,
-#user-context-add-friend-nickname,
-#user-context-edit-friend-nickname,
-#user-context-close-dm):after {
-    overflow: hidden;
-    font-size: .7rem;
-    font-weight: bold;
-    position: absolute;
-    min-width: 100%;
-    max-width: 36px;
-    text-align: center;
-    transform:translateY(25px);
-    border-radius: 3px;
+#user-context-user-profile {
+  --icon: var(--icon-view-profile);
+}
+#user-context-mention {
+  --icon: var(--icon-mention);
+}
+#user-context-message-user {
+  --icon: var(--icon-message);
+}
+#user-context-call {
+  --icon: var(--icon-call);
+}
+#user-context-note {
+  --icon: var(--icon-list);
+}
+#user-context-add-friend-nickname {
+  --icon: var(--icon-add-nickOut);
+}
+#user-context-edit-friend-nickname {
+  --icon: var(--icon-edit-nickOut);
+}
+#user-context-close-dm {
+  --icon: var(--icon-close-dm);
 }
 
-#user-context-user-profile:hover:after {content: "Profile"}
-#user-context-mention:hover:after {content: "Tag"}
-#user-context-message-user:hover:after {content: "Chat"}
-#user-context-call:hover:after {content: "Call"}
-#user-context-note:hover:after {content: "Note"}
-:is(#user-context-add-friend-nickname, #user-context-edit-friend-nickname):hover:after {content: "Nick"}
-#user-context-close-dm:hover:after {content: "Close DM"}
+:is(
+    #user-context-user-profile,
+    #user-context-mention,
+    #user-context-message-user,
+    #user-context-call,
+    #user-context-note,
+    #user-context-add-friend-nickname,
+    #user-context-edit-friend-nickname,
+    #user-context-close-dm
+  ):after {
+  overflow: hidden;
+  font-size: 0.7rem;
+  font-weight: bold;
+  position: absolute;
+  min-width: 100%;
+  max-width: 36px;
+  text-align: center;
+  transform: translateY(25px);
+  border-radius: 3px;
+}
+
+#user-context-user-profile:hover:after {
+  content: "Profile";
+}
+#user-context-mention:hover:after {
+  content: "Tag";
+}
+#user-context-message-user:hover:after {
+  content: "Chat";
+}
+#user-context-call:hover:after {
+  content: "Call";
+}
+#user-context-note:hover:after {
+  content: "Note";
+}
+:is(
+    #user-context-add-friend-nickname,
+    #user-context-edit-friend-nickname
+  ):hover:after {
+  content: "Nick";
+}
+#user-context-close-dm:hover:after {
+  content: "Close DM";
+}
 
 [role="group"] > [role="menuitem"]:hover:after {
-    background-color: var(--brand-experiment-600);  
+  background-color: var(--brand-experiment-600);
 }
 
-
-[role="group"]:has(#user-context-user-profile,
-#user-context-mention,
-#user-context-message-user,
-#user-context-call,
-#user-context-note,
-#user-context-add-friend-nickname,
-#user-context-edit-friend-nickname,
-#user-context-close-dm) {
-    display: flex;
-    justify-content: space-evenly;
+[role="group"]:has(
+    #user-context-user-profile,
+    #user-context-mention,
+    #user-context-message-user,
+    #user-context-call,
+    #user-context-note,
+    #user-context-add-friend-nickname,
+    #user-context-edit-friend-nickname,
+    #user-context-close-dm
+  ) {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* Volume slider section */
 div#user-context-invite-to-server {
-    display: var(--hide-context-menu-invite-to-server);
+  display: var(--hide-context-menu-invite-to-server);
 }
 
-#user-context-user-volume:has(.sliderContainer-3vLXjN) > .labelContainer-35-WEd {
-    display: none;
+#user-context-user-volume:has(.sliderContainer-3vLXjN)
+  > .labelContainer-35-WEd {
+  display: none;
 }
 
 .sliderContainer-3vLXjN {
-    position: relative;
+  position: relative;
 }
 
-#user-context-user-volume:has(.sliderContainer-3vLXjN div:hover) > .labelContainer-35-WEd {
-    display: unset;
-    position: absolute;
-    text-align: center;
-    left: 8px;
-    right: 0;
-    transform: translateY(14px);
+#user-context-user-volume:has(.sliderContainer-3vLXjN div:hover)
+  > .labelContainer-35-WEd {
+  display: unset;
+  position: absolute;
+  text-align: center;
+  left: 8px;
+  right: 0;
+  transform: translateY(14px);
 }
 
-#user-context-user-volume:has(.sliderContainer-3vLXjN:hover) > .labelContainer-35-WEd > * {
-    width: 100%;
-    background: var(--brand-experiment-600);
-    border-radius: 4px;
+#user-context-user-volume:has(.sliderContainer-3vLXjN:hover)
+  > .labelContainer-35-WEd
+  > * {
+  width: 100%;
+  background: var(--brand-experiment-600);
+  border-radius: 4px;
 }
 
 .slider-1mmyV6.slider-cXPmnn.mini-28oMa3 {
-    top: -6px;
+  top: -6px;
 }
 
 div[role="group"]:has(#user-context-user-volume) {
-    height: 30px;
+  height: 30px;
 }

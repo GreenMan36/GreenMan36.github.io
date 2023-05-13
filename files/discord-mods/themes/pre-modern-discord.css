@@ -21,249 +21,299 @@
 
 /* used for theme name and version, DO NOT TOUCH */
 :root {
-    --theme-name: "Greens Premodern Discord";
-    --version: "26.03.23a";
+  --theme-name: "Greens Premodern Discord";
+  --version: "26.03.23a";
 }
 
 /* these can be customized. just copy/paste the whole thing into your custom CSS and mess around with it. */
 :root {
-    --radius: 18px;
-	--border-radius: clamp(4px, var(--radius), 40px)
+  --radius: 18px;
+  --border-radius: clamp(4px, var(--radius), 40px);
 }
 
 /* styling for the theme name and version */
 .info-3pQQBb::after {
-    border-top: 1px solid var(--text-muted);
-    border-radius: 4px;
-    content: var(--theme-name);
-    text-align: center;
-    display: block;
-    color: var(--text-muted);
-    font-family: var(--font-primary);
-    font-size: 12px;
-    line-height: 16px;
-    text-rendering: optimizeLegibility;
-    padding-top: 4px;
-    margin-top: 12px;
+  border-top: 1px solid var(--text-muted);
+  border-radius: 4px;
+  content: var(--theme-name);
+  text-align: center;
+  display: block;
+  color: var(--text-muted);
+  font-family: var(--font-primary);
+  font-size: 12px;
+  line-height: 16px;
+  text-rendering: optimizeLegibility;
+  padding-top: 4px;
+  margin-top: 12px;
 }
 
 /* play animation on hover */
 .info-3pQQBb:hover:after {
-    content: var(--theme-name);
-    animation: versionhover 16s ease-in infinite running;
-    filter: blur(0px);
-    opacity: 1; 
+  content: var(--theme-name);
+  animation: versionhover 16s ease-in infinite running;
+  filter: blur(0px);
+  opacity: 1;
 }
 
 /* version hover animation */
 @keyframes versionhover {
-    0% {
-        opacity: 1; 
-        filter: blur(0px);
-    }
-    3%   { 
-        opacity: 0;
-        filter: blur(32px);
-    }
-    3.1% { 
-        opacity: 0;
-        content: "Theme Version " var(--version);
-        filter: blur(0px);
-    }
-    17% { 
-        opacity: 1;
-        content: "Theme Version " var(--version);
-        filter: blur(0px);
-    }
-    50% { 
-        opacity: 1;
-        content: "Theme Version " var(--version);
-        filter: blur(0px);
-    }
-    52% { 
-        opacity: 0;
-        content: "Theme Version " var(--version);
-        filter: blur(32px);
-    }
-    52.1% { 
-        opacity: 0;
-        filter: blur(0px);
-        content: var(--theme-name);
-    }
-    67% { 
-        opacity: 1;
-        filter: blur(0px);
-    }
-    100% { 
-    }
-    
+  0% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+  3% {
+    opacity: 0;
+    filter: blur(32px);
+  }
+  3.1% {
+    opacity: 0;
+    content: "Theme Version " var(--version);
+    filter: blur(0px);
+  }
+  17% {
+    opacity: 1;
+    content: "Theme Version " var(--version);
+    filter: blur(0px);
+  }
+  50% {
+    opacity: 1;
+    content: "Theme Version " var(--version);
+    filter: blur(0px);
+  }
+  52% {
+    opacity: 0;
+    content: "Theme Version " var(--version);
+    filter: blur(32px);
+  }
+  52.1% {
+    opacity: 0;
+    filter: blur(0px);
+    content: var(--theme-name);
+  }
+  67% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+  100% {
+  }
 }
 
 /* converts dashes to spaces and capitalizes text */
 @font-face {
-    font-family: dash2space;
-    unicode-range: U+002D;
-    src: url(https://AlexisJonsson.github.io/BetterDiscordAddons/Themes/font/dash2space.ttf) format('truetype'), url(https://AlexisJonsson.github.io/BetterDiscordAddons/Themes/font/dash2space.woff2) format('woff2')
+  font-family: dash2space;
+  unicode-range: U+002D;
+  src: url(https://AlexisJonsson.github.io/BetterDiscordAddons/Themes/font/dash2space.ttf)
+      format("truetype"),
+    url(https://AlexisJonsson.github.io/BetterDiscordAddons/Themes/font/dash2space.woff2)
+      format("woff2");
 }
 
 .name-28HaxV {
-    text-transform: capitalize
+  text-transform: capitalize;
 }
 
-.autocompleteRowVertical-EA9dCg[data-list-item-id*=channel-autocomplete] .autocompleteRowContentPrimary-1kUW9H .colorInteractiveActive-30E9n8,
-.content-2a4AW9 .emptyChannelIcon-1YdEz2~.size32-5yOQel,
+.autocompleteRowVertical-EA9dCg[data-list-item-id*="channel-autocomplete"]
+  .autocompleteRowContentPrimary-1kUW9H
+  .colorInteractiveActive-30E9n8,
+.content-2a4AW9 .emptyChannelIcon-1YdEz2 ~ .size32-5yOQel,
 .quickswitcher-pKcM9U .result-u66Ywh .match-20K5f5,
 .sidebar-1tnWFu .mainContent-20q_Hp[href] .channelName-3KPsGw,
-.title-31SJ6t .iconWrapper-2awDjA+.title-17SveM,
+.title-31SJ6t .iconWrapper-2awDjA + .title-17SveM,
 .wrapper-1ZcZW-[class="wrapper-1ZcZW- mention interactive"] {
-    font-family: dash2space, var(--font-primary);
-    text-transform: capitalize
+  font-family: dash2space, var(--font-primary);
+  text-transform: capitalize;
 }
 
 .theme-dark,
 [aria-label="User Profile Modal"],
-[class^=profileBannerPreview] {    
-    --modal-background: #181818;
-    --modal-footer-background: #181818;
-    
-    --header-primary: #fff;
-    --header-secondary: #bdbdbd;
-    --text-normal: #dedede;
-    --text-muted: #787878;
-    --text-link: #00b0f4;
-    --text-positive: #4fdc7b;
-    --channels-default: #919191;
-    --interactive-normal: #bdbdbd;
-    --interactive-hover: #dedede;
-    --interactive-active: #fff;
-    --interactive-muted: #575757;
-    --embed-color: hsl(0, 0%, 34%);
-    --background-primary: #111111;
-    --background-primary-transparent: rgba(26, 26, 26, 0.6);
-    --background-transparent-header: rgba(49, 49, 49, 0.5);
-    --background-secondary: #181818;
-    --background-secondary-alpha: rgba(24, 24, 24, 0.7);
-    --background-secondary-alt: #181818;
-    --background-tertiary: hsl(0, 0%, 19%);
-    --background-accent: hsl(0, 0%, 34%);
-    --background-floating: #1a1a1a;
-    --background-floating-alt: rgba(10, 10, 10, 0.8);
-    --background-mobile-primary: #3b3b3b;
-    --background-mobile-secondary: #333333;
-    --activity-card-background: #242424;
-    --background-modifier-hover: rgba(87, 87, 87, 0.2);
-    --background-modifier-active: rgba(87, 87, 87, 0.24);
-    --background-modifier-selected: rgba(100, 100, 100, 0.2);
-    --background-modifier-accent: rgba(255, 255, 255, 0.06);
-    --input-background: #333333;
-    --deprecated-text-input-border-hover: #050505;
-    --deprecated-text-input-border-disabled: #242424;
-    --deprecated-text-input-prefix: #dedede;
-    --channeltextarea-background: #282828;
-    --deprecated-quickswitcher-input-background: rgba(120, 120, 120, 0.15);
-    --scrollbar-thin-thumb: #242424;
-    --scrollbar-thin-track: transparent;
-    --scrollbar-auto-thumb: #4e4e4e;
-    --scrollbar-auto-track: #242424;
-    --scrollbar-auto-scrollbar-color-thumb: #242424;
-    --scrollbar-auto-scrollbar-color-track: #333333;
-    --elevation-stroke: 0 0 0 1px rgba(4, 4, 5, 0.15);
-    --elevation-low: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05), 0 2px 0 rgba(4, 4, 5, 0.05);
-    --elevation-medium: 0 4px 4px rgba(0, 0, 0, 0.16);
-    --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.44);
-    --bg-color: rgba(0, 0, 0, .25);
-    --bg-color-hover: rgba(0, 0, 0, .4);
-    --bg-color-selected: rgba(0, 0, 0, .6);
-    --search-bar: rgba(255, 255, 255, .05);
-    --search-bar-cat: rgba(255, 255, 255, 0.125)
+[class^="profileBannerPreview"] {
+  --modal-background: #181818;
+  --modal-footer-background: #181818;
+
+  --header-primary: #fff;
+  --header-secondary: #bdbdbd;
+  --text-normal: #dedede;
+  --text-muted: #787878;
+  --text-link: #00b0f4;
+  --text-positive: #4fdc7b;
+  --channels-default: #919191;
+  --interactive-normal: #bdbdbd;
+  --interactive-hover: #dedede;
+  --interactive-active: #fff;
+  --interactive-muted: #575757;
+  --embed-color: hsl(0, 0%, 34%);
+  --background-primary: #111111;
+  --background-primary-transparent: rgba(26, 26, 26, 0.6);
+  --background-transparent-header: rgba(49, 49, 49, 0.5);
+  --background-secondary: #181818;
+  --background-secondary-alpha: rgba(24, 24, 24, 0.7);
+  --background-secondary-alt: #181818;
+  --background-tertiary: hsl(0, 0%, 19%);
+  --background-accent: hsl(0, 0%, 34%);
+  --background-floating: #1a1a1a;
+  --background-floating-alt: rgba(10, 10, 10, 0.8);
+  --background-mobile-primary: #3b3b3b;
+  --background-mobile-secondary: #333333;
+  --activity-card-background: #242424;
+  --background-modifier-hover: rgba(87, 87, 87, 0.2);
+  --background-modifier-active: rgba(87, 87, 87, 0.24);
+  --background-modifier-selected: rgba(100, 100, 100, 0.2);
+  --background-modifier-accent: rgba(255, 255, 255, 0.06);
+  --input-background: #333333;
+  --deprecated-text-input-border-hover: #050505;
+  --deprecated-text-input-border-disabled: #242424;
+  --deprecated-text-input-prefix: #dedede;
+  --channeltextarea-background: #282828;
+  --deprecated-quickswitcher-input-background: rgba(120, 120, 120, 0.15);
+  --scrollbar-thin-thumb: #242424;
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: #4e4e4e;
+  --scrollbar-auto-track: #242424;
+  --scrollbar-auto-scrollbar-color-thumb: #242424;
+  --scrollbar-auto-scrollbar-color-track: #333333;
+  --elevation-stroke: 0 0 0 1px rgba(4, 4, 5, 0.15);
+  --elevation-low: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05),
+    0 2px 0 rgba(4, 4, 5, 0.05);
+  --elevation-medium: 0 4px 4px rgba(0, 0, 0, 0.16);
+  --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.44);
+  --bg-color: rgba(0, 0, 0, 0.25);
+  --bg-color-hover: rgba(0, 0, 0, 0.4);
+  --bg-color-selected: rgba(0, 0, 0, 0.6);
+  --search-bar: rgba(255, 255, 255, 0.05);
+  --search-bar-cat: rgba(255, 255, 255, 0.125);
 }
 
 .theme-light {
-    --header-primary: #060607;
-    --header-secondary: #4f5660;
-    --text-normal: #2e3338;
-    --text-muted: #747f8d;
-    --text-link: hsl(212, calc(var(--saturation-factor, 1)*100%), 43.9%);
-    --text-link-low-saturation: hsl(212, calc(var(--saturation-factor, 1)*100%), 43.9%);
-    --text-positive: hsl(139, calc(var(--saturation-factor, 1)*47.3%), 43.9%);
-    --text-warning: hsl(38, calc(var(--saturation-factor, 1)*95.7%), 54.1%);
-    --text-danger: hsl(359, calc(var(--saturation-factor, 1)*82.6%), 59.4%);
-    --text-brand: hsl(235, calc(var(--saturation-factor, 1)*85.6%), 64.7%);
-    --interactive-normal: #4f5660;
-    --interactive-hover: #2e3338;
-    --interactive-active: #060607;
-    --interactive-muted: #c7ccd1;
-    --background-primary: #fff;
-    --background-primary-transparent: rgba(26, 26, 26, 0.6);
-    --background-transparent-header: rgba(255, 255, 255, 0.74);
-    --background-secondary: #f2f3f5;
-    --background-secondary-alpha: rgba(242, 243, 245, 0.7);
-    --background-secondary-alt: #ebedef;
-    --background-tertiary: #e3e5e8;
-    --background-accent: #747f8d;
-    --background-floating: #fff;
-    --background-floating-alt: rgba(242, 243, 245, 0.6);
-    --background-mobile-primary: #f8f9f9;
-    --background-mobile-secondary: #fff;
-    --background-modifier-hover: rgba(116, 127, 141, 0.08);
-    --background-modifier-active: rgba(116, 127, 141, 0.16);
-    --background-modifier-selected: rgba(116, 127, 141, 0.24);
-    --background-modifier-accent: rgba(6, 6, 7, 0.08);
-    --info-positive-text: #000;
-    --info-warning-text: #000;
-    --info-danger-text: #000;
-    --info-help-background: hsla(212, calc(var(--saturation-factor, 1)*100%), 43.9%, 0.1);
-    --info-help-foreground: hsl(212, calc(var(--saturation-factor, 1)*100%), 43.9%);
-    --info-help-text: #000;
-    --status-warning-text: #fff;
-    --scrollbar-thin-thumb: rgba(79, 84, 92, 0.3);
-    --scrollbar-thin-track: transparent;
-    --scrollbar-auto-thumb: #ccc;
-    --scrollbar-auto-track: #f2f2f2;
-    --scrollbar-auto-scrollbar-color-thumb: #e3e5e8;
-    --scrollbar-auto-scrollbar-color-track: #f2f3f5;
-    --elevation-stroke: 0 0 0 1px rgba(6, 6, 7, 0.08);
-    --elevation-low: 0 1px 0 rgba(6, 6, 7, 0.1), 0 1.5px 0 rgba(6, 6, 7, 0.025), 0 2px 0 rgba(6, 6, 7, 0.025);
-    --elevation-medium: 0 4px 4px rgba(0, 0, 0, 0.08);
-    --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.16);
-    --logo-primary: hsl(235, calc(var(--saturation-factor, 1)*85.6%), 64.7%);
-    --control-brand-foreground: hsl(235, calc(var(--saturation-factor, 1)*85.6%), 64.7%);
-    --control-brand-foreground-new: hsl(235, calc(var(--saturation-factor, 1)*85.6%), 64.7%);
-    --background-mentioned: hsla(38, calc(var(--saturation-factor, 1)*95.7%), 54.1%, 0.1);
-    --background-mentioned-hover: hsla(38, calc(var(--saturation-factor, 1)*95.7%), 54.1%, 0.2);
-    --background-message-hover: rgba(6, 6, 7, 0.02);
-    --channels-default: #515151;
-    --guild-header-text-shadow: 0 1px 1px hsla(0, 0%, 100%, 0.4);
-    --channeltextarea-background: #ebedef;
-    --activity-card-background: #fff;
-    --textbox-markdown-syntax: #6a7480;
-    --deprecated-card-bg: #f8f9f9;
-    --deprecated-card-editable-bg: rgba(246, 246, 247, 0.6);
-    --deprecated-store-bg: #f8f9f9;
-    --deprecated-quickswitcher-input-background: #fff;
-    --deprecated-quickswitcher-input-placeholder: rgba(79, 84, 92, 0.3);
-    --deprecated-text-input-bg: rgba(79, 84, 92, 0.02);
-    --deprecated-text-input-border: rgba(79, 84, 92, 0.3);
-    --deprecated-text-input-border-hover: #b9bbbe;
-    --deprecated-text-input-border-disabled: #dcddde;
-    --deprecated-text-input-prefix: #b9bbbe;
-    --bg-color: rgba(79, 84, 92, .1);
-    --bg-color-hover: rgba(79, 84, 92, .2);
-    --bg-color-selected: rgba(79, 84, 92, .25);
-    --search-bar: rgba(0, 0, 0, 0.05);
-    --search-bar-cat: rgba(0, 0, 0, 0.288)
+  --header-primary: #060607;
+  --header-secondary: #4f5660;
+  --text-normal: #2e3338;
+  --text-muted: #747f8d;
+  --text-link: hsl(212, calc(var(--saturation-factor, 1) * 100%), 43.9%);
+  --text-link-low-saturation: hsl(
+    212,
+    calc(var(--saturation-factor, 1) * 100%),
+    43.9%
+  );
+  --text-positive: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);
+  --text-warning: hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+  --text-danger: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);
+  --text-brand: hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
+  --interactive-normal: #4f5660;
+  --interactive-hover: #2e3338;
+  --interactive-active: #060607;
+  --interactive-muted: #c7ccd1;
+  --background-primary: #fff;
+  --background-primary-transparent: rgba(26, 26, 26, 0.6);
+  --background-transparent-header: rgba(255, 255, 255, 0.74);
+  --background-secondary: #f2f3f5;
+  --background-secondary-alpha: rgba(242, 243, 245, 0.7);
+  --background-secondary-alt: #ebedef;
+  --background-tertiary: #e3e5e8;
+  --background-accent: #747f8d;
+  --background-floating: #fff;
+  --background-floating-alt: rgba(242, 243, 245, 0.6);
+  --background-mobile-primary: #f8f9f9;
+  --background-mobile-secondary: #fff;
+  --background-modifier-hover: rgba(116, 127, 141, 0.08);
+  --background-modifier-active: rgba(116, 127, 141, 0.16);
+  --background-modifier-selected: rgba(116, 127, 141, 0.24);
+  --background-modifier-accent: rgba(6, 6, 7, 0.08);
+  --info-positive-text: #000;
+  --info-warning-text: #000;
+  --info-danger-text: #000;
+  --info-help-background: hsla(
+    212,
+    calc(var(--saturation-factor, 1) * 100%),
+    43.9%,
+    0.1
+  );
+  --info-help-foreground: hsl(
+    212,
+    calc(var(--saturation-factor, 1) * 100%),
+    43.9%
+  );
+  --info-help-text: #000;
+  --status-warning-text: #fff;
+  --scrollbar-thin-thumb: rgba(79, 84, 92, 0.3);
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: #ccc;
+  --scrollbar-auto-track: #f2f2f2;
+  --scrollbar-auto-scrollbar-color-thumb: #e3e5e8;
+  --scrollbar-auto-scrollbar-color-track: #f2f3f5;
+  --elevation-stroke: 0 0 0 1px rgba(6, 6, 7, 0.08);
+  --elevation-low: 0 1px 0 rgba(6, 6, 7, 0.1), 0 1.5px 0 rgba(6, 6, 7, 0.025),
+    0 2px 0 rgba(6, 6, 7, 0.025);
+  --elevation-medium: 0 4px 4px rgba(0, 0, 0, 0.08);
+  --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.16);
+  --logo-primary: hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
+  --control-brand-foreground: hsl(
+    235,
+    calc(var(--saturation-factor, 1) * 85.6%),
+    64.7%
+  );
+  --control-brand-foreground-new: hsl(
+    235,
+    calc(var(--saturation-factor, 1) * 85.6%),
+    64.7%
+  );
+  --background-mentioned: hsla(
+    38,
+    calc(var(--saturation-factor, 1) * 95.7%),
+    54.1%,
+    0.1
+  );
+  --background-mentioned-hover: hsla(
+    38,
+    calc(var(--saturation-factor, 1) * 95.7%),
+    54.1%,
+    0.2
+  );
+  --background-message-hover: rgba(6, 6, 7, 0.02);
+  --channels-default: #515151;
+  --guild-header-text-shadow: 0 1px 1px hsla(0, 0%, 100%, 0.4);
+  --channeltextarea-background: #ebedef;
+  --activity-card-background: #fff;
+  --textbox-markdown-syntax: #6a7480;
+  --deprecated-card-bg: #f8f9f9;
+  --deprecated-card-editable-bg: rgba(246, 246, 247, 0.6);
+  --deprecated-store-bg: #f8f9f9;
+  --deprecated-quickswitcher-input-background: #fff;
+  --deprecated-quickswitcher-input-placeholder: rgba(79, 84, 92, 0.3);
+  --deprecated-text-input-bg: rgba(79, 84, 92, 0.02);
+  --deprecated-text-input-border: rgba(79, 84, 92, 0.3);
+  --deprecated-text-input-border-hover: #b9bbbe;
+  --deprecated-text-input-border-disabled: #dcddde;
+  --deprecated-text-input-prefix: #b9bbbe;
+  --bg-color: rgba(79, 84, 92, 0.1);
+  --bg-color-hover: rgba(79, 84, 92, 0.2);
+  --bg-color-selected: rgba(79, 84, 92, 0.25);
+  --search-bar: rgba(0, 0, 0, 0.05);
+  --search-bar-cat: rgba(0, 0, 0, 0.288);
 }
 
 :root {
-    --font-primary: "Segoe UI", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-display: "Bahnschrift", Ginto, "Pretendard SemiBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-code: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-    --font-korean: Pretendard, "Apple SD Gothic Neo", "NanumBarunGothic", "맑은 고딕", "Malgun Gothic", Gulim, 굴림, Dotum, 돋움, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-japanese: Whitney, Hiragino Sans, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Osaka, "MS PGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-chinese-simplified: Whitney, "Microsoft YaHei New", 微软雅黑, "Microsoft Yahei", "Microsoft JhengHei", 宋体, SimSun, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-chinese-traditional: Whitney, "Microsoft JhengHei", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft YaHei", 微軟雅黑, 宋体, SimSun, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --avatar-speaking-color: rgb(59, 165, 93);
-    --channel-icon: #787878
+  --font-primary: "Segoe UI", Whitney, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --font-display: "Bahnschrift", Ginto, "Pretendard SemiBold", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  --font-code: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+    "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+    "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
+    monospace;
+  --font-korean: Pretendard, "Apple SD Gothic Neo", "NanumBarunGothic",
+    "맑은 고딕", "Malgun Gothic", Gulim, 굴림, Dotum, 돋움, "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  --font-japanese: Whitney, Hiragino Sans, "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Osaka, "MS PGothic",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-chinese-simplified: Whitney, "Microsoft YaHei New", 微软雅黑,
+    "Microsoft Yahei", "Microsoft JhengHei", 宋体, SimSun, "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  --font-chinese-traditional: Whitney, "Microsoft JhengHei", 微軟正黑體,
+    "Microsoft JhengHei UI", "Microsoft YaHei", 微軟雅黑, 宋体, SimSun,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --avatar-speaking-color: rgb(59, 165, 93);
+  --channel-icon: #787878;
 }
 
 .activity-2EQDZv,
@@ -272,139 +322,147 @@
 .name-28HaxV,
 .topic-11NuQZ,
 .usernameFont-2oJxoI {
-    font-weight: 400
+  font-weight: 400;
 }
 
 .name-3Vmqxm,
 .username-h_Y3Us {
-    font-family: var(--font-display);
-    font-weight: 400
+  font-family: var(--font-display);
+  font-weight: 400;
 }
 
-/* top bar looks ugly with the sidebar */  
+/* top bar looks ugly with the sidebar */
 .content-1SgpWY,
-.membersWrap-3NUR2t{
-    overflow: hidden;
-    border-top-left-radius: clamp(4px, calc(var(--border-radius) * 1.5), 40px);
+.membersWrap-3NUR2t {
+  overflow: hidden;
+  border-top-left-radius: clamp(4px, calc(var(--border-radius) * 1.5), 40px);
 }
 
 /* don't make this overflow hidden or typing a big message will push the memberbar out of view. Idk why. 
 https://i.imgur.com/5RDybX0.png*/
 .container-2o3qEW {
-    border-top-left-radius: clamp(4px, calc(var(--border-radius) * 1.5), 40px);
+  border-top-left-radius: clamp(4px, calc(var(--border-radius) * 1.5), 40px);
 }
 
 .theme-dark .container-3wLKDe {
-    background: var(--background-primary);
+  background: var(--background-primary);
 }
 
 /* same for the call controls */
 section.panels-3wFtMD {
-    border-top-right-radius:  clamp(4px, calc(var(--border-radius)), 32px);
+  border-top-right-radius: clamp(4px, calc(var(--border-radius)), 32px);
 }
 
 .container-1NXEtd,
-.privateChannels-oVe7HL, 
+.privateChannels-oVe7HL,
 .container-1NXEtd.thin-31rlnD.scrollerBase-_bVAAt {
-    border-bottom-left-radius: clamp(4px, calc(var(--border-radius)), 32px);
+  border-bottom-left-radius: clamp(4px, calc(var(--border-radius)), 32px);
 }
 
 .sidebar-1tnWFu {
-    background: linear-gradient(90deg, 
-                                var(--background-tertiary) var(--border-radius),
-                                var(--background-secondary) var(--border-radius));
+  background: linear-gradient(
+    90deg,
+    var(--background-tertiary) var(--border-radius),
+    var(--background-secondary) var(--border-radius)
+  );
 }
 
 /* slight improvement to how the scrollbar looks with rounded corners https://i.imgur.com/liL596B.png */
 .scroller-kQBbkU.auto-2K3UW5.scrollerBase-_bVAAt.disableScrollAnchor-6TwzvM.managedReactiveScroller-1lEEh3::-webkit-scrollbar-track {
-    margin-top: calc(var(--border-radius) * 1.5);
+  margin-top: calc(var(--border-radius) * 1.5);
 }
 
 /* call/activity panel */
 :is(.theme-dark, .theme-light) .panel-2ZFCRb {
-    background: var(--background-tertiary);
+  background: var(--background-tertiary);
 }
 
 .grid-21dB-S,
 .list-3FIpnh {
-    background-color: var(--background-primary)
+  background-color: var(--background-primary);
 }
 
 .mainCard-3KBsBI {
-    background: var(--background-secondary);
+  background: var(--background-secondary);
 }
 
 /* fix fade on grid item */
 .theme-dark .textContentFooter-2JnNv8 {
-  background: linear-gradient(0deg, 
-                    var(--background-secondary) 25%, 
-                    transparent) 100%;
+  background: linear-gradient(
+      0deg,
+      var(--background-secondary) 25%,
+      transparent
+    )
+    100%;
 }
 
-.base-2jDfDU > .content-1SgpWY > .sidebar-1tnWFu > .thin-31rlnD.scrollerBase-_bVAAt {
-    background: var(--background-secondary);
+.base-2jDfDU
+  > .content-1SgpWY
+  > .sidebar-1tnWFu
+  > .thin-31rlnD.scrollerBase-_bVAAt {
+  background: var(--background-secondary);
 }
 
 span.expandedFolderBackground-1kSAf6 {
-    background: var(--background-secondary-alpha);
+  background: var(--background-secondary-alpha);
 }
 
 .theme-dark .pageWrapper-2PwDoS,
 .scroller-RfJjkV.thin-31rlnD.scrollerBase-_bVAAt {
-    background: var(--background-primary);
+  background: var(--background-primary);
 }
 
 .contentWrapper-3vHNP2 {
-    background: var(--background-tertiary);
+  background: var(--background-tertiary);
 }
 
 /* Discord home page */
 .background-fkKrXt {
-    background-color: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;
 }
 
 .interactiveCard-2iMtdk,
 .container-2Hi7Km,
 .container-xwOzwi > * > * /* TODO: make this selector not so freaking generic lmao */ {
-    background: var(--background-secondary);
+  background: var(--background-secondary);
 }
 
 /* random tiny fade in top bar? https://i.imgur.com/Fx0G6Ds.png */
 .children-3xh0VB.headerBarInner-2pcZSM::after,
-.children-3xh0VB.innerHeader-1cC3Fp::after{
-    background: unset;
+.children-3xh0VB.innerHeader-1cC3Fp::after {
+  background: unset;
 }
 
 /* channels & roles page */
 .container-ZMc96U.themed-Hp1KC_,
 .content-1jQy2l.container-2IKOsH,
 .chat-2ZfjoI {
-    background: var(--background-primary) !important;
+  background: var(--background-primary) !important;
 }
 
 .prompt-1sE27N,
 .profileCard-2gVmvm,
 .channelRow-4X_3fi {
-    background: var(--background-secondary);
+  background: var(--background-secondary);
 }
 
 /* My Account profile card */
 .background-3d_SjE,
 .background-3d_SjE > .fieldList-in8WkP {
-    background: var(--background-tertiary);
+  background: var(--background-tertiary);
 }
 
 .accountProfileCard-lbN7n- {
-    background: var(--background-secondary);
+  background: var(--background-secondary);
 }
 
 .wrapper-1VLyxH.avatar-3mTjvZ {
-    border-color: var(--background-secondary);
+  border-color: var(--background-secondary);
 }
 
 /* patch the background of the user area */
 .theme-dark .container-YkUktl,
 .theme-light .container-YkUktl,
 .container-1zzFcN {
-    background: var(--background-tertiary) !important;
+  background: var(--background-tertiary) !important;
 }

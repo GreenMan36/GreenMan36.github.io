@@ -1,0 +1,23 @@
+/**
+ * @name Better Image Embeds
+ * @author GreenMan36#0633
+ * @authorLink https://github.com/GreenMan36
+ * @version 11.12.23a
+ * @description A small snippet that makes the inbox bigger so you see more messages at once.
+*/
+
+/*
+(C) GreenMan36#0633
+*/
+
+/* snippets don't show their version in the settings */
+
+/* resize inbox */
+div[class*="recentMentionsPopout__"] {
+  width: 100%;
+  height: 100%;
+  min-height: 80vh;
+  min-width: 50vw;
+  transition: all 0.5s ease-out;
+  transition-property: max-height, max-width, width, height;
+}

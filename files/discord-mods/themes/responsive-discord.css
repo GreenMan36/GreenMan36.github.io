@@ -2,7 +2,7 @@
  * @name Greens Responsive Discord
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 12.02.23a
+ * @version 11.12.23a
  * @description A theme that tries to make Discord's sidebars adapt when resizing your window.
 */
 
@@ -17,11 +17,12 @@
 */
 
 @import url(https://greenman36.github.io/files/discord-mods/themes/snippets/fix-titlebar-dragarea.css);
+@import url(https://greenman36.github.io/files/discord-mods/themes/snippets/bigger-inbox.css);
 
 /* used for theme name and version, DO NOT TOUCH */
 :root {
   --theme-name: "Greens Responsive Discord";
-  --version: "26.03.23a";
+  --version: "11.12.23a";
 }
 
 /* these can be customized. just copy/paste the whole thing into your custom CSS and mess around with it. */
@@ -44,13 +45,11 @@
   box-shadow: none;
 }
 
-/* Modern Discord: remove channel list fade, bugs when panel expanded */
-/*.panels-3wFtMD:before {
-    background: none !important;
-}*/
-
 /* styling for the theme name and version */
-.info-3pQQBb::after {
+div[class*="sidebarRegionScroller__"]
+  > div[class*="sidebar__"]
+  > div[class*="side_"]
+  > div[class*="info__"]::after {
   border-top: 1px solid var(--text-muted);
   border-radius: 4px;
   content: var(--theme-name);
@@ -66,7 +65,10 @@
 }
 
 /* play animation on hover */
-.info-3pQQBb:hover:after {
+div[class*="sidebarRegionScroller__"]
+  > div[class*="sidebar__"]
+  > div[class*="side_"]
+  > div[class*="info__"]:hover:after {
   content: var(--theme-name);
   animation: versionhover 16s ease-in infinite running;
   filter: blur(0px);
@@ -168,20 +170,6 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c {
     > a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX {
     display: none;
   }
-}
-
-/* resize inbox */
-.recentMentionsPopout-2bI1ZN {
-  width: 100%;
-  height: 100%;
-  min-height: 80vh;
-  min-width: 50vw;
-  transition: all 0.5s ease-out;
-  transition-property: max-height, max-width, width, height;
-}
-/* fix inbox header */
-.channelHeader-DFRX8q {
-  top: -1px;
 }
 
 @media (max-width: 1400px) {

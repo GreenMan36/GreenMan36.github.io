@@ -113,10 +113,12 @@ div[class*="sidebarRegionScroller__"] > nav[class*="sidebar__"] > div[class*="si
 }
 
 /* animations */
-.container-2o3qEW,
+[class*="container_"]:has(> [class^="membersList"]),
 .sidebar-1tnWFu {
   transition: max-width var(--sidebars-transition);
-} /* change fullscreen popout background */
+}
+
+/* change fullscreen popout background */
 .backdrop-2ByYRN.withLayer-2VVmpp {
   transition: all 0.2s ease-in-out;
   opacity: 1 !important;
@@ -276,7 +278,7 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c {
 
 /* only enable colapsing member bar when below this window size */
 @media (max-width: 1919px) {
-  .container-2o3qEW {
+  [class*="container_"]:has(> [class^="membersList"]) {
     max-width: 60px;
     position: absolute;
     top: var(--member-bar-top-offset);
@@ -304,7 +306,7 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c {
   }
 
   /* expand memberlist on hover */
-  .container-2o3qEW:hover {
+  [class*="container_"]:has(> [class^="membersList"]):hover {
     transition: max-width 0s;
     max-width: 240px;
   }

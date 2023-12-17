@@ -2,7 +2,7 @@
  * @name Outline Dark Emojis
  * @author asportnoy#6969 && GreenMan36
  * @authorLink https://github.com/asportnoy
- * @version 17.12.23a
+ * @version 17.12.23b
  * @description A small snippet that makes dark emojis have a outline for visibility. ALL credits to @asportnoy#6969. I, GreenMan36#0633 made small edits and additions to the snippet.
 */
 
@@ -126,7 +126,7 @@ button:is([data-name=tm], [data-name=copyright], [data-name=registered]),
 /* when something has "dark" and "white", its likely a white logo meant for darkmode, no need to glow */
 :is([data-name*="dark" i], [aria-label*="dark" i] img, img[alt*="dark" i]):not(:is([data-name*="white" i], [aria-label*="white" i] img, img[alt*="white" i])),
 [data-name*="black" i], [aria-label*="black" i] img, img[alt*="black" i],
-[data-name*="grey" i], [aria-label*="grey" i] img, img[alt*="grey" i]
+[data-name*="grey" i], [aria-label*="grey" i] img, img[alt*="grey" i],
 [data-name*="gray" i], [aria-label*="gray" i] img, img[alt*="gray" i]
 {
   filter: var(--outline-dark-emojis);

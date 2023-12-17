@@ -114,7 +114,7 @@ div[class*="sidebarRegionScroller__"] > nav[class*="sidebar__"] > div[class*="si
 
 /* animations */
 [class*="container_"]:has(> [class^="membersList"]),
-.sidebar-1tnWFu {
+[class*="sidebar_"]:has(> [aria-label="User area"]) {
   transition: max-width var(--sidebars-transition);
 }
 
@@ -234,7 +234,7 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c {
 
 /* only enable colapsing left side bars when below this window size */
 @media (max-width: 999px) {
-  .sidebar-1tnWFu {
+  [class*="sidebar_"]:has(> [aria-label="User area"]) {
     max-width: 128px;
     position: absolute;
     left: 0;
@@ -258,7 +258,7 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c {
   }
 
   /* expand channelbar on hover */
-  .sidebar-1tnWFu:hover {
+  [class*="sidebar_"]:has(> [aria-label="User area"]):hover {
     transition: max-width 0s;
     max-width: 240px;
   }
@@ -289,7 +289,7 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c {
   }
 
   /* fixes the layering of the sidebar */
-  .sidebar-1tnWFu {
+  [class*="sidebar_"]:has(> [aria-label="User area"]) {
     z-index: 101;
     /* optional, might be useful in the future */
     top: var(--channel-bar-top-offset);
@@ -353,7 +353,7 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c {
 }
 
 /* fix call button overflow */
-.platform-win .sidebar-1tnWFu {
+.platform-win [class*="sidebar_"]:has(> [aria-label="User area"]) {
   overflow: hidden !important;
 }
 

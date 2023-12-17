@@ -2,7 +2,7 @@
  * @name Greens Responsive Discord
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 11.12.23a
+ * @version 17.12.23a
  * @description A theme that tries to make Discord's sidebars adapt when resizing your window.
 */
 
@@ -40,16 +40,13 @@
 
 /* Image carrousel */
 /* Modern Discord: blur the background card */
-.carouselModal-1eUFoq.zoomedCarouselModalRoot-beLNhM.root-g14mjS.fullscreenOnMobile-ixj0e3 {
+/* .carouselModal-1eUFoq.zoomedCarouselModalRoot-beLNhM.root-g14mjS.fullscreenOnMobile-ixj0e3 {
   background-color: transparent;
   box-shadow: none;
-}
+} */
 
 /* styling for the theme name and version */
-div[class*="sidebarRegionScroller__"]
-  > div[class*="sidebar__"]
-  > div[class*="side_"]
-  > div[class*="info__"]::after {
+div[class*="sidebarRegionScroller__"] > nav[class*="sidebar__"] > div[class*="side_"] > div[class*="info__"]::after {
   border-top: 1px solid var(--text-muted);
   border-radius: 4px;
   content: var(--theme-name);
@@ -65,10 +62,7 @@ div[class*="sidebarRegionScroller__"]
 }
 
 /* play animation on hover */
-div[class*="sidebarRegionScroller__"]
-  > div[class*="sidebar__"]
-  > div[class*="side_"]
-  > div[class*="info__"]:hover:after {
+div[class*="sidebarRegionScroller__"] > nav[class*="sidebar__"] > div[class*="side_"] > div[class*="info__"]:hover:after {
   content: var(--theme-name);
   animation: versionhover 16s ease-in infinite running;
   filter: blur(0px);
@@ -165,9 +159,7 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c {
   }
 
   /* hide the help article in the app directory */
-  div.header-XAevvr
-    > div.titleContainer-1P_BAz
-    > a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX {
+  div.header-XAevvr > div.titleContainer-1P_BAz > a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX {
     display: none;
   }
 }
@@ -344,9 +336,7 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c {
     display: none;
   }
 
-  .threadSidebarOpen-1LSXvU
-    > .title-31SJ6t.container-ZMc96U.themed-Hp1KC_
-    > .toolbar-3_r2xA {
+  .threadSidebarOpen-1LSXvU > .title-31SJ6t.container-ZMc96U.themed-Hp1KC_ > .toolbar-3_r2xA {
     padding-right: 60px;
   }
 
@@ -391,12 +381,7 @@ button.arrowContainer-2wpC4q {
 
 /* fix fade on grid item */
 .theme-dark .textContentFooter-2JnNv8 {
-  background: linear-gradient(
-      0deg,
-      var(--background-secondary) 25%,
-      transparent
-    )
-    100%;
+  background: linear-gradient(0deg, var(--background-secondary) 25%, transparent) 100%;
 }
 
 /* patch the images in the user call area */

@@ -299,11 +299,6 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c {
     top: var(--channel-bar-top-offset);
   }
 
-  /* only set the chat width in actual channels */
-  main.chatContent-3KubbW {
-    max-width: calc(100% - 60px);
-  }
-
   /* this button just breaks how the theme looks when used and the bar is collapsed */
   [aria-label="Hide Member List"] {
     display: none !important;

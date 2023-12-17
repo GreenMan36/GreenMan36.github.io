@@ -2,7 +2,7 @@
  * @name Greens Responsive Discord
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 17.12.23d
+ * @version 17.12.23c
  * @description A theme that tries to make Discord's sidebars adapt when resizing your window.
 */
 
@@ -22,7 +22,7 @@
 /* used for theme name and version, DO NOT TOUCH */
 :root {
   --theme-name: "Greens Responsive Discord";
-  --version: "17.12.23d";
+  --version: "17.12.23c";
 }
 
 /* these can be customized. just copy/paste the whole thing into your custom CSS and mess around with it. */
@@ -247,6 +247,11 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c {
     margin-left: 128px;
   }
 
+  /*  fix channels and roles page having double margin */
+  [class^="chat__"]:has(> [class*="pageBody_"], > * > [class*="pageBody_"], ) {
+    margin-left: 0;
+  }
+
   /*  Fixes opened forum posts to not have margin  */
   [class^="content__"]:has(.threadSidebarFloating_b980c7) [class*="floating_"] [class^="chat__"] {
     margin-left: unset;
@@ -434,4 +439,9 @@ button.button-1EGGcP {
   .container-3XgAHv.floating-3M3WeH {
     right: -440px;
   }
+}
+
+/* make the new members page table scrollable/usable */
+[class^="content__"]:has([class^="mainTableContainer__"]) {
+  overflow-x: auto;
 }

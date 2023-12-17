@@ -2,7 +2,7 @@
  * @name Greens Responsive Discord
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 17.12.23b
+ * @version 17.12.23c
  * @description A theme that tries to make Discord's sidebars adapt when resizing your window.
 */
 
@@ -22,7 +22,7 @@
 /* used for theme name and version, DO NOT TOUCH */
 :root {
   --theme-name: "Greens Responsive Discord";
-  --version: "17.12.23b";
+  --version: "17.12.23c";
 }
 
 /* these can be customized. just copy/paste the whole thing into your custom CSS and mess around with it. */
@@ -247,9 +247,9 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c {
     margin-left: 128px;
   }
 
-  /* force the browse channels text to not wrap around */
-  .name-28HaxV {
-    white-space: nowrap;
+  /*  Fixes opened forum posts to not have margin  */
+  [class^="content__"]:has(.threadSidebarFloating_b980c7) [class*="floating_"] [class^="chat__"] {
+    margin-left: unset;
   }
 
   div#channels:not(:hover) {
@@ -286,9 +286,14 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c {
     right: 0;
     /* fixes a weird bug that sometimes happens when doing a big paste in the textbox */
     height: calc(100% - var(--member-bar-top-offset));
+    z-index: 101;
   }
 
   [class^="chatContainer__"] > [class^="chatContent__"]:not([aria-label=" (channel)"]) {
+    margin-right: 60px;
+  }
+
+  [class^="content__"] > [class^="container"]:has([aria-label="Create Post"]) {
     margin-right: 60px;
   }
 

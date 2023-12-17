@@ -2,7 +2,7 @@
  * @name Greens Responsive Discord
  * @author GreenMan36#0633
  * @authorLink https://github.com/GreenMan36
- * @version 17.12.23c
+ * @version 17.12.23d
  * @description A theme that tries to make Discord's sidebars adapt when resizing your window.
 */
 
@@ -22,7 +22,7 @@
 /* used for theme name and version, DO NOT TOUCH */
 :root {
   --theme-name: "Greens Responsive Discord";
-  --version: "17.12.23c";
+  --version: "17.12.23d";
 }
 
 /* these can be customized. just copy/paste the whole thing into your custom CSS and mess around with it. */
@@ -287,6 +287,22 @@ a.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX.snowsgivingLink-1TZi3c {
     /* fixes a weird bug that sometimes happens when doing a big paste in the textbox */
     height: calc(100% - var(--member-bar-top-offset));
     z-index: 101;
+  }
+
+  /* allow member list in group DM's to be collapsed */
+  [class^="membersWrap__"] {
+    position: absolute;
+    top: var(--member-bar-top-offset);
+    bottom: 0;
+    right: 0;
+    transition: translate var(--sidebars-transition);
+
+    translate: calc(100% - 60px);
+  }
+
+  [class^="membersWrap__"]:hover {
+    transition: translate 0s;
+    translate: 0;
   }
 
   [class^="chatContainer__"] > [class^="chatContent__"]:not([aria-label=" (channel)"]) {
